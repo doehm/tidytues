@@ -2,7 +2,6 @@
 
 library(tidyverse)
 library(showtext)
-library(patchwork)
 library(janitor)
 library(glue)
 library(ggtext)
