@@ -1,4 +1,6 @@
 
+Click on header to be directed to the code for ech chart
+
 ## [Week 48: FIFA World Cup](https://github.com/doehm/tidytues/blob/main/scripts/2022/week%2048%20FIFA%20world%20cup/FIFA%20world%20cup.R)
 
 <img src='scripts/2022/week 48 FIFA world cup/FIFA world cup.png' />
