@@ -96,7 +96,7 @@ subtitle <-
  • weight capacity and
  • speed (floors per minute)
 for passenger elevators in NYC
-Brooklyn has the most floors
+Brooklyn services the most floors
 on average. Manhattan has the
 fastest."
 
