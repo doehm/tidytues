@@ -1,6 +1,10 @@
 
 Click on header to be directed to the code for ech chart
 
+## [Week 51: Weather forecasts](https://github.com/doehm/tidytues/blob/main/scripts/2022/week%2051%20weather/weather.R)
+
+<img src='scripts/2022/week 51 weather/weather.png' />
+
 ## [Week 50: US Monthly Retail Sales](https://github.com/doehm/tidytues/blob/main/scripts/2022/week%2050%20retail/retail.png)
 
 <img src='scripts/2022/week 50 retail/retail.png' />
