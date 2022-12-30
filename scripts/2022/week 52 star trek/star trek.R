@@ -50,9 +50,9 @@ spock <- glue("<span style='font-family:fa-solid; color:{pal[2]}'>&#xf259;</span
 caption <- glue("{mastodon} @danoehm@{space}fosstodon.org • {twitter} @danoehm • {github} doehm/tidytues • {floppy} rtrek package")
 
 subtitle <- glue(
-"Almost 60% of Star Trek narratives<br>
-across all formats occur between the<br>
-years 2351 and 2380 {spock}")
+"Almost 60% (1252/2122) of Star Trek narratives<br>
+across all formats occur between the years<br>
+2351 and 2380 {spock}")
 
 # 📊 plot --------------------------------------------------------------------
 
