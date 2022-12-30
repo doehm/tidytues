@@ -1,7 +1,9 @@
 
 Click on header or the chart for the code.
 
-[Old TidyTuesday repo](https://github.com/doehm/tidyTuesday)
+For reasons that I don’t fully understand I had to decommission my old
+repo. I will one day migrate it over here but in the meantime here is a
+link to my [Old TidyTuesday repo](https://github.com/doehm/tidyTuesday)
 
 ## [Week 52: Star Trek](https://github.com/doehm/tidytues/blob/main/scripts/2022/week%2052%20star%20trek/star%20trek.R)
 
