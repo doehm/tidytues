@@ -5,6 +5,12 @@ For reasons that I don’t fully understand I had to decommission my old
 repo. I will one day migrate it over here but in the meantime here is a
 link to my [Old TidyTuesday repo](https://github.com/doehm/tidyTuesday)
 
+## [Week 1: BYOD](https://github.com/doehm/tidytues/blob/main/scripts/2023/week%201%20BYOD/mischa.R)
+
+<a href='https://github.com/doehm/tidytues/blob/main/scripts/2023/week%201%20BYOD/mischa.R'><img src='scripts/2023/week 1 BYOD/mischa.png' height = 800/></a>
+
+# 2022
+
 ## [Week 52: Star Trek](https://github.com/doehm/tidytues/blob/main/scripts/2022/week%2052%20star%20trek/star%20trek.R)
 
 <a href='https://github.com/doehm/tidytues/blob/main/scripts/2022/week%2052%20star%20trek/star%20trek.R'><img src='scripts/2022/week 52 star trek/star trek.png' /></a>
@@ -16,7 +22,7 @@ link to my [Old TidyTuesday repo](https://github.com/doehm/tidyTuesday)
 ## [Week 50: US Monthly Retail Sales](https://github.com/doehm/tidytues/blob/main/scripts/2022/week%2050%20retail/retail.png)
 
 <a href='https://github.com/doehm/tidytues/blob/main/scripts/2022/week%2050%20retail/retail.R'>
-<img src='scripts/2022/week 50 retail/retail.png' /> </a>
+<img src='scripts/2022/week 50 retail/retail.png' height = 800/> </a>
 
 ## [Week 49: Elevators of NYC](https://github.com/doehm/tidytues/blob/main/scripts/2022/week%2049%20elevators/week%2049%20elevators.R)
 
