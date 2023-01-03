@@ -2,7 +2,6 @@
 
 library(tidyverse)
 library(showtext)
-library(janitor)
 library(glue)
 library(ggtext)
 library(lubridate)
@@ -60,7 +59,9 @@ caption <- glue(
 {twitter} @danoehm")
 
 # 📊 plot --------------------------------------------------------------------
+
 a <- -10
+
 df_mischa |>
   ggplot() +
   background_image(pantry_blurred) +
@@ -70,22 +71,14 @@ df_mischa |>
   geom_rect(aes(xmin = -1.9, xmax = 5, ymin = 0, ymax = 8), fill = pal1[12]) +
   geom_segment(aes(x = -0.3, xend = -0.3, y = 0, yend = 8), colour = pal1[10]) +
   geom_segment(aes(x = -0.3, xend = 5, y = 8, yend = 8), colour = pal1[11], size = 1) +
-
   geom_segment(aes(x = 0, xend = 1, y = height, yend = height), colour = txt) +
   geom_text(aes(x = 1.25, y = height, label = date_lab), family = ft, colour = txt, size = 20, hjust = 0) +
-
-  # annotate("text", x = 0.8, y = 12, label = "M\nI\nS\nC\nH\nA", family = "salt", size = 50,
-           # lineheight = 0.32, colour = txt, vjust = 0, fontface = "bold") +
-
   annotate("text", x = 0.4, y = 13, label = "MISCHA", family = "salt", size = 40,
            lineheight = 0.32, colour = txt, hjust = 0, fontface = "bold") +
-
   annotate("richtext", x = 4.8, y = 4, label = caption, family = ft, size = 16,
            lineheight = 0.28, colour = txt, hjust = 1, label.color = NA, fill = NA) +
-
   xlim(-5, 5) +
   ylim(0, 90) +
-  # labs(caption = caption) +
   theme_void() +
   theme(
     text = element_text(family = ft, colour = txt, size = 48),
