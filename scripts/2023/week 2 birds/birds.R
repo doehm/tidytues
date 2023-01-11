@@ -19,8 +19,8 @@ pal <- c('#64312e', '#d95232', '#f19540', '#e3db9a', '#c2aa3e', '#545432', '#193
 bg <- "white"
 txt <- '#64312e'
 
-font_add("fa-brands", regular = "C:/Users/Dan/Documents/R/repos/survivorDev/assets/fonts/fontawesome-free-6.2.0-web/webfonts/fa-brands-400.ttf")
-font_add("fa-solid", regular = "C:/Users/Dan/Documents/R/repos/survivorDev/assets/fonts/fontawesome-free-6.2.0-web/webfonts/fa-solid-900.ttf")
+font_add("fa-brands", regular = "assets/fonts/fontawesome-free-6.2.0-web/fa-brands-400.ttf")
+font_add("fa-solid", regular = "assets/fonts/fontawesome-free-6.2.0-web/fa-solid-900.ttf")
 font_add_google("Mukta", "mukta")
 font_add_google("Rowdies", "rowdies")
 showtext_auto()
