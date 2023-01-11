@@ -74,4 +74,4 @@ df_base |>
     legend.position = "bottom"
   )
 
-ggsave("scripts/2023/week 2 birds/brids.png", height = 12, width = 12)
+ggsave("scripts/2023/week 2 birds/birds.png", height = 12, width = 12)

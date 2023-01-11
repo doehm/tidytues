@@ -5,7 +5,20 @@ For reasons that I don’t fully understand I had to decommission my old
 repo. I will one day migrate it over here but in the meantime here is a
 link to my [Old TidyTuesday repo](https://github.com/doehm/tidyTuesday)
 
+## [Week 2: Project FeederWatch](https://github.com/doehm/tidytues/blob/main/scripts/2023/week%202%20birds/birds.R)
+
+<a href='https://github.com/doehm/tidytues/blob/main/scripts/2023/week%202%20birds/birds.R'><img src='scripts/2023/week 2 birds/birds.png' /></a>
+
 ## [Week 1: BYOD](https://github.com/doehm/tidytues/blob/main/scripts/2023/week%201%20BYOD/mischa.R)
+
+<div id="cover">
+
+<img src='scripts/2023/week 1 BYOD/not voted out.png'>
+<img src='scripts/2023/week 1 BYOD/not voted out med evac.png'>
+<img src='scripts/2023/week 1 BYOD/not voted out quit.png'>
+<img src='scripts/2023/week 1 BYOD/not voted out eliminated.png'>
+
+</div>
 
 <a href='https://github.com/doehm/tidytues/blob/main/scripts/2023/week%201%20BYOD/mischa.R'><img src='scripts/2023/week 1 BYOD/mischa.png' height = 800/></a>
 
@@ -34,3 +47,18 @@ link to my [Old TidyTuesday repo](https://github.com/doehm/tidyTuesday)
 <a href='https://github.com/doehm/tidytues/blob/main/scripts/2022/week%2048%20FIFA%20world%20cup/FIFA%20world%20cup.R'>
 <img src='scripts/2022/week 48 FIFA world cup/FIFA world cup.png' />
 </a>
+
+<style type="text/css">
+#cover {
+  width: 800px;
+  height: 800px;
+  margin: 0 auto;
+}
+
+#cover > img {
+  float: left;
+  border: 2px solid black;
+  width: 45%;
+  margin: 1.66%;
+}
+</style>
