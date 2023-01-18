@@ -15,9 +15,6 @@ artists <- dat$artists
 
 # ✍️ fonts and palettes ------------------------------------------------------
 
-txt <- "grey20"
-bg <- "white"
-
 bg <- "black"
 txt <- "grey50"
 pal <- c("pink", "grey50", "grey50")
@@ -67,9 +64,9 @@ caption <- glue("{mastodon} @danoehm@{space}fosstodon.org • {twitter} @danoehm
 # 📊 plot --------------------------------------------------------------------
 
 df_base |>
-  ggplot(aes(x, artist_name, size = 8*r, colour = artist_gender)) +
-  geom_text(aes(19, artist_name, label = artist_name), size = 11, family = ft) +
-  geom_text(aes(x, -10, label = lab), df_gender, family = ft, size = 64) +
+  ggplot(aes(x, artist_name, size = 4*r, colour = artist_gender)) +
+  geom_text(aes(19, artist_name, label = artist_name), size = 6, family = ft) +
+  geom_text(aes(x, -10, label = lab), df_gender, family = ft, size = 32) +
   geom_jitter() +
   scale_size_identity() +
   scale_colour_manual(values = pal) +
@@ -79,9 +76,10 @@ df_base |>
   theme(
     text = element_text(family = ft, size = 24, lineheight = 0.3, colour = txt),
     plot.background = element_rect(fill = bg),
-    plot.caption = element_markdown(colour = txt, hjust = 0.5, margin = margin(t=80), size = 64),
+    plot.caption = element_markdown(colour = txt, hjust = 0.5, margin = margin(t=80), size = 32),
     plot.margin = margin(b = 20, t = 50, r = 50, l = 50),
     legend.position = "none",
 )
 
 ggsave("scripts/2023/week 3 artists/artists.png", height = 48, width = 30)
+ggsave("scripts/2023/week 3 artists/artists sm.png", height = 24, width = 15)
