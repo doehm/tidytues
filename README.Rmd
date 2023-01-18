@@ -6,6 +6,10 @@ Click on header or the chart for the code.
 
 For reasons that I don't fully understand I had to decommission my old repo. I will one day migrate it over here but in the meantime here is a link to my [Old TidyTuesday repo](https://github.com/doehm/tidyTuesday)
 
+## [Week 3: Art history](https://github.com/doehm/tidytues/blob/main/scripts/2023/week%203%20artists/artists.R)
+
+<a href='https://github.com/doehm/tidytues/blob/main/scripts/2023/week%203%20artists/artists.R'><img src='scripts/2023/week 3 artists/artists.png'  height = 800/></a>
+
 ## [Week 2: Project FeederWatch](https://github.com/doehm/tidytues/blob/main/scripts/2023/week%202%20birds/birds.R)
 
 <a href='https://github.com/doehm/tidytues/blob/main/scripts/2023/week%202%20birds/birds.R'><img src='scripts/2023/week 2 birds/birds.png' /></a>
