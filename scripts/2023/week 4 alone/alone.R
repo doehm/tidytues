@@ -100,7 +100,7 @@ df_base |>
   theme_void() +
   theme(
     text = element_text(family = ft, size = 64, lineheight = 0.3, colour = txt),
-    plot.background = element_rect(fill = bg),
+    plot.background = element_rect(fill = bg, colour = bg),
     plot.title = element_text(size = 220, family = ft1, colour = txt, hjust = 0.2),
     plot.subtitle = element_text(hjust = 0.06),
     plot.caption = element_markdown(colour = txt, hjust = 0.5, margin = margin(t=20)),
