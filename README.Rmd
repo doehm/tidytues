@@ -6,6 +6,10 @@ Click on header or the chart for the code.
 
 For reasons that I don't fully understand I had to decommission my old repo. I will one day migrate it over here but in the meantime here is a link to my [Old TidyTuesday repo](https://github.com/doehm/tidyTuesday)
 
+## [Week 5: Cats](https://github.com/doehm/tidytues/blob/main/scripts/2023/week%205%20cats/cats.R)
+
+<a href='https://github.com/doehm/tidytues/blob/main/scripts/2023/week%205%20alone/cats.R'><img src='scripts/2023/week 5 cats/cats.png'/></a>
+
 ## [Week 4: Alone](https://github.com/doehm/tidytues/blob/main/scripts/2023/week%204%20alone/alone.R)
 
 <a href='https://github.com/doehm/tidytues/blob/main/scripts/2023/week%204%20alone/alone.R'><img src='scripts/2023/week 4 alone/alone.png'  height = 800/></a>
