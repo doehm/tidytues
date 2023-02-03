@@ -7,7 +7,7 @@ link to my [Old TidyTuesday repo](https://github.com/doehm/tidyTuesday)
 
 ## [Week 5: Cats](https://github.com/doehm/tidytues/blob/main/scripts/2023/week%205%20cats/cats.R)
 
-<a href='https://github.com/doehm/tidytues/blob/main/scripts/2023/week%205%20alone/cats.R'><img src='scripts/2023/week 5 cats/cats.png'/></a>
+<a href='https://github.com/doehm/tidytues/blob/main/scripts/2023/week%205%20cats/cats.R'><img src='scripts/2023/week 5 cats/cats.png'/></a>
 
 ## [Week 4: Alone](https://github.com/doehm/tidytues/blob/main/scripts/2023/week%204%20alone/alone.R)
 
