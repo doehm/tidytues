@@ -5,6 +5,10 @@ For reasons that I don’t fully understand I had to decommission my old
 repo. I will one day migrate it over here but in the meantime here is a
 link to my [Old TidyTuesday repo](https://github.com/doehm/tidyTuesday)
 
+## [Week 6: Tech](https://github.com/doehm/tidytues/blob/main/scripts/2023/week%206%20cats/tech.R)
+
+<a href='https://github.com/doehm/tidytues/blob/main/scripts/2023/week%206%20tech/tech.R'><img src='scripts/2023/week 6 tech/tech.png'/></a>
+
 ## [Week 5: Cats](https://github.com/doehm/tidytues/blob/main/scripts/2023/week%205%20cats/cats.R)
 
 <a href='https://github.com/doehm/tidytues/blob/main/scripts/2023/week%205%20cats/cats.R'><img src='scripts/2023/week 5 cats/cats.png'/></a>
