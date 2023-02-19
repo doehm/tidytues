@@ -31,7 +31,12 @@ df_base <- dat$age_gaps |>
   filter(character_1_gender != character_2_gender) |>
   count(actor_1_age, actor_2_age, character_1_gender)
 
-lm(actor_2_age ~ actor_1_age-1, filter(dat$age_gaps, character_1_gender == "man"))
+df_poly <- tribble(
+  ~x, ~y,
+  15, 15,
+  80, 80,
+  80, 15
+)
 
 # 🔡 text --------------------------------------------------------------------
 
@@ -40,7 +45,7 @@ twitter <- glue("<span style='font-family:fa-brands; color:{txt}'>&#xf099;</span
 github <- glue("<span style='font-family:fa-brands; color:{txt}'>&#xf09b;</span>")
 floppy <- glue("<span style='font-family:fa-solid; color:{txt}'>&#xf0c7;</span>")
 space <- glue("<span style='color:{bg};font-size:1px'>'</span>")
-space2 <- glue("<span style='color:{bg}'>--</span>")
+space2 <- glue("<span style='color:{bg}'>--</span>") # can't believe I'm doing this
 caption <- glue("{mastodon}{space2}@danoehm@{space}fosstodon.org{space2}{twitter}{space2}@danoehm{space2}{github}{space2}doehm/tidytuesday{space2}{floppy}{space2}Data Is Plural")
 
 title <- "Hollywood Relationships"
@@ -54,13 +59,6 @@ several decades. This trend can be observed across various movie genres, from
 romantic comedies to dramas and even action movies. While there are certainly
 exceptions to this pattern, it is not difficult to find examples of male
 leads who are much older than their female co-stars"
-
-df_poly <- tribble(
-  ~x, ~y,
-  15, 15,
-  80, 80,
-  80, 15
-)
 
 # 📊 plot --------------------------------------------------------------------
 
