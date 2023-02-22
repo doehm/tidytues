@@ -28,6 +28,9 @@ ft <- "bar"
 # 🤼 wrangle -----------------------------------------------------------------
 
 df_base <- dat$age_gaps |>
+  # reducing scope to hetrosexual couples.
+  # comparing age difference to same sex couples would be interesting.
+  # for another time.
   filter(character_1_gender != character_2_gender) |>
   count(actor_1_age, actor_2_age, character_1_gender)
 
