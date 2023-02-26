@@ -71,7 +71,7 @@ twitter <- glue("<span style='font-family:fa-brands; color:{txt}'>&#xf099;</span
 github <- glue("<span style='font-family:fa-brands; color:{txt}'>&#xf09b;</span>")
 floppy <- glue("<span style='font-family:fa-solid; color:{txt}'>&#xf0c7;</span>")
 space <- glue("<span style='color:{bg};font-size:1px'>'</span>")
-caption <- glue("{mastodon} @danoehm@{space}fosstodon.org • {twitter} @danoehm • {github} doehm/tidytuesday • {floppy} alone R pacakge")
+caption <- glue("{mastodon} @danoehm@{space}fosstodon.org • {twitter} @danoehm • {github} doehm/tidytuesday • {floppy} alone R package")
 subtitle <- "     A tribute to the Alone survivalists that were medically evacuated from the game due to
 starvation or starvation related health concerns"
 

@@ -2,7 +2,6 @@
 
 library(tidyverse)
 library(showtext)
-library(patchwork)
 library(janitor)
 library(glue)
 library(ggtext)
@@ -24,7 +23,7 @@ bg <- "white"
 font_add("fa-brands", regular = "assets/fonts/fontawesome-free-6.2.0-web/fa-brands-400.ttf")
 font_add("fa-solid", regular = "assets/fonts/fontawesome-free-6.2.0-web/fa-solid-900.ttf")
 font_add_google("Mukta", "mukta")
-font_add_google("Satisfy", "baby")
+font_add_google("Satisfy", "sat")
 showtext_auto()
 
 ft <- "mukta"
@@ -47,8 +46,8 @@ n_col <- 15
 n_row <- 26
 n <- n_col*n_row
 df_grid <- expand_grid(
-  y = 0:(26-1),
-  x = 0:(15-1)
+  y = 0:(n_col-1),
+  x = 0:(n_row-1)
 ) |>
   mutate(
     x = ifelse(y %% 2 == 1, x + cos(pi/3), x),
@@ -81,7 +80,7 @@ df_grid |>
     text = element_text(family = ft, size = 62, lineheight = 0.3, colour = txt),
     plot.background = element_rect(fill = bg, colour = bg),
     plot.caption = element_markdown(colour = txt, hjust = 0.5, margin = margin(t = 20)),
-    plot.title = element_text(family = "baby", size = 300, margin = margin(b = 10), hjust = 0.5),
+    plot.title = element_text(family = "sat", size = 300, margin = margin(b = 10), hjust = 0.5),
     plot.margin = margin(b = 20, t = 50, r = 50, l = 50)
 )
 
