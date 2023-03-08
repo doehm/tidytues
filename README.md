@@ -5,9 +5,13 @@ For reasons that I don’t fully understand I had to decommission my old
 repo. I will one day migrate it over here but in the meantime here is a
 link to my [Old TidyTuesday repo](https://github.com/doehm/tidyTuesday)
 
+## [Week 10: Numbats](https://github.com/doehm/tidytues/blob/main/scripts/2023/week%2010%20numbts/numbats.R)
+
+<a href='https://github.com/doehm/tidytues/blob/main/scripts/2023/week%2010%20numbats/numbats.R'><img src='scripts/2023/week 10 numbats/numbats.png'/></a>
+
 ## [Week 9: African sentiment analysis](https://github.com/doehm/tidytues/blob/main/scripts/2023/week%209%20afrisenti/afrisenti.R)
 
-<a href='https://github.com/doehm/tidytues/blob/main/scripts/2023/week%209%20afrisenti/afrisenti.R'><img src='scripts/2023/week 9 afrisenti/afrisenti.png'  height = 800/></a>
+<a href='https://github.com/doehm/tidytues/blob/main/scripts/2023/week%209%20afrisenti/afrisenti.R'><img src='scripts/2023/week 9 afrisenti/afrisenti.png'/></a>
 
 ## [Week 8: Bob Ross Paintings](https://github.com/doehm/tidytues/blob/main/scripts/2023/week%208%20bob%20ross/bob%20ross.R)
 
