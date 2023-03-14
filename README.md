@@ -5,6 +5,10 @@ For reasons that I don’t fully understand I had to decommission my old
 repo. I will one day migrate it over here but in the meantime here is a
 link to my [Old TidyTuesday repo](https://github.com/doehm/tidyTuesday)
 
+## [Week 11: European drug development](https://github.com/doehm/tidytues/blob/main/scripts/2023/week%2011%20drugs/drugs.R)
+
+<a href='https://github.com/doehm/tidytues/blob/main/scripts/2023/week%2011%20drugs/drugs.R'><img src='scripts/2023/week 11 drugs/drugs.png'/></a>
+
 ## [Week 10: Numbats](https://github.com/doehm/tidytues/blob/main/scripts/2023/week%2010%20numbts/numbats.R)
 
 <a href='https://github.com/doehm/tidytues/blob/main/scripts/2023/week%2010%20numbats/numbats.R'><img src='scripts/2023/week 10 numbats/numbats.png'/></a>
