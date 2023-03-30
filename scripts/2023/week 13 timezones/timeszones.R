@@ -36,13 +36,6 @@ ft1 <- "rubik"
 
 cities <- c("Paris", "Berlin", "London", "Sydney", "New York")
 
-df_arc <- tibble(theta = seq(0, pi, length = 100)) |>
-  mutate(
-  x = cos(theta),
-  y = sin(theta)
-) |>
-  arrange(x)
-
 df_time <- trans |>
   group_by(zone) |>
   slice_max(end) |>
@@ -97,8 +90,8 @@ df_time |>
   scale_fill_identity() +
   coord_fixed() +
   labs(
-    title = "TIMEZONES",
-    subtitle = glue("Timezone offsets and <span style='color:{accent};'>daylight savings</span>"),
+    title = "TIME ZONES",
+    subtitle = glue("Time zone offsets and <span style='color:{accent};'>daylight savings</span>"),
     caption = caption
     ) +
   theme_void() +
