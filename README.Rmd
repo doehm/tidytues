@@ -6,6 +6,10 @@ Click on header or the chart for the code.
 
 For reasons that I don't fully understand I had to decommission my old repo. I will one day migrate it over here but in the meantime here is a link to my [Old TidyTuesday repo](https://github.com/doehm/tidyTuesday)
 
+## [Week 15: US Egg Production](https://github.com/doehm/tidytues/blob/main/scripts/2023/week-15-eggs/eggs.R)
+
+<a href='https://github.com/doehm/tidytues/blob/main/scripts/2023/week-15-eggs/eggs.R'><img src='scripts/2023/week-15-eggs/eggs.png'/></a>
+
 ## [Week 14: Premier League 2021-2022](https://github.com/doehm/tidytues/blob/main/scripts/2023/week-14-soccer/soccer.R)
 
 <a href='https://github.com/doehm/tidytues/blob/main/scripts/2023/week-14-soccer/soccer.R'><img src='scripts/2023/week-14-soccer/soccer.png'/></a>
