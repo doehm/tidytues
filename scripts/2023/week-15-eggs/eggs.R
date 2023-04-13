@@ -94,7 +94,7 @@ df_trend <- df_ts |>
 # where the eggs go
 df_egg <- df_trend |>
   filter(month(date) == 1) |>
-  mutate(egg_lab = paste0(round(n_eggs/1000, 1), "B"))
+  mutate(egg_lab = paste0(round(trend/1000, 1), "B"))
 
 # adding the trend estimates onto df_base0
 df_base0 <- df_base0 |>
@@ -162,14 +162,16 @@ df_annotations <- tribble(
 
 df_base0 |>
   ggplot() +
-  geom_line(aes(date, n_eggs), df_base) +
-  geom_ribbon(aes(date, ymin = 7000, ymax = n_eggs, group = grp, fill = fill)) +
+  geom_line(aes(date, n_eggs), df_base, colour = txt, alpha = 0.3) +
+  geom_point(aes(date, n_eggs), df_base, colour = txt, alpha = 0.7) +
+  # geom_ribbon(aes(date, ymin = 7000, ymax = n_eggs, group = grp, fill = fill)) +
+  geom_ribbon(aes(date, ymin = 7000, ymax = n_eggs), df_base, fill = pal[18], alpha = 0.1) +
   geom_line(aes(date, trend), df_trend, size = 3, colour = pal[8]) +
   geom_line(aes(date, trend), df_trend, size = 2, colour = pal[4]) +
 
   # forecast
-  geom_line(aes(date, .mean), df_fcst, size = 3, colour = pal[4], linetype = 2) +
   geom_ribbon(aes(date, ymin = trend, ymax = .mean), filter(df_trend, !is.na(.mean)), fill = pal[8], alpha = 0.5) +
+  geom_line(aes(date, .mean), df_fcst, size = 3, colour = pal[4], linetype = 2) +
 
   # eggs
   geom_richtext(aes(date, trend, label = egg1), df_egg, label.color = NA, fill = NA, size = 68) +
