@@ -5,13 +5,17 @@ For reasons that I don’t fully understand I had to decommission my old
 repo. I will one day migrate it over here but in the meantime here is a
 link to my [Old TidyTuesday repo](https://github.com/doehm/tidyTuesday)
 
+## [Week 18: Portal Project](https://github.com/doehm/tidytues/blob/main/scripts/2023/week-18-portal/portal.R)
+
+<a href='https://github.com/doehm/tidytues/blob/main/scripts/2023/week-18-portal/portal.R'><img src='scripts/2023/week-18-portal/portal.png'/></a>
+
 ## [Week 17: London Marathon](https://github.com/doehm/tidytues/blob/main/scripts/2023/week-17-london-marathon/london-marathon.R)
 
-<a href='https://github.com/doehm/tidytues/blob/main/scripts/2023/week-17-london-marathon/london-marathon.R'><img src='scripts/2023/week-17-london-marathon/london-marathon.png'/></a>
+<a href='https://github.com/doehm/tidytues/blob/main/scripts/2023/week-17-london-marathon/london-marathon.R'><img class="ht" src='scripts/2023/week-17-london-marathon/london-marathon.png'/></a>
 
 ## [Week 16: Founder crops](https://github.com/doehm/tidytues/blob/main/scripts/2023/week-16-crops/crops.R)
 
-<a href='https://github.com/doehm/tidytues/blob/main/scripts/2023/week-16-crops/crops.R'><img src='scripts/2023/week-16-crops/crops.png'/></a>
+<a href='https://github.com/doehm/tidytues/blob/main/scripts/2023/week-16-crops/crops.R'><img class='ht' src='scripts/2023/week-16-crops/crops.png'/></a>
 
 ## [Week 15: US Egg Production](https://github.com/doehm/tidytues/blob/main/scripts/2023/week-15-eggs/eggs.R)
 
@@ -120,5 +124,9 @@ link to my [Old TidyTuesday repo](https://github.com/doehm/tidyTuesday)
   border: 2px solid black;
   width: 45%;
   margin: 1.66%;
+}
+
+.ht {
+  max-height:800px
 }
 </style>
