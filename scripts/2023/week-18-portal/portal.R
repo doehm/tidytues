@@ -7,6 +7,7 @@ library(janitor)
 library(glue)
 library(ggtext)
 library(brms)
+library(ggbeeswarm)
 
 # 💾 load data ---------------------------------------------------------------
 
