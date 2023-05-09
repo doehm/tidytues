@@ -5,6 +5,10 @@ For reasons that I don’t fully understand I had to decommission my old
 repo. I will one day migrate it over here but in the meantime here is a
 link to my [Old TidyTuesday repo](https://github.com/doehm/tidyTuesday)
 
+## [Week 19: Childcare services](https://github.com/doehm/tidytues/blob/main/scripts/2023/week-19-childcare/childcare.R)
+
+<a href='https://github.com/doehm/tidytues/blob/main/scripts/2023/week-19-childcare/childcare.R'><img src='scripts/2023/week-19-childcare/childcare.png'/></a>
+
 ## [Week 18: Portal Project](https://github.com/doehm/tidytues/blob/main/scripts/2023/week-18-portal/portal.R)
 
 <a href='https://github.com/doehm/tidytues/blob/main/scripts/2023/week-18-portal/portal.R'><img src='scripts/2023/week-18-portal/portal.png'/></a>
