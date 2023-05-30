@@ -5,14 +5,15 @@ For reasons that I don’t fully understand I had to decommission my old
 repo. I will one day migrate it over here but in the meantime here is a
 link to my [Old TidyTuesday repo](https://github.com/doehm/tidyTuesday)
 
+## [Week 22: Centenarians](https://github.com/doehm/tidytues/blob/main/scripts/2023/week-22-centenarians/centenarians.R)
+
+<a href='https://github.com/doehm/tidytues/blob/main/scripts/2023/week-22-centenarians/centenarians.R'>
+<img src='scripts/2023/week-22-centenarians/centenarians.png'/></a>
+
 ## [Week 21: Squirrels](https://github.com/doehm/tidytues/blob/main/scripts/2023/week-21-squirrels/squirrels.R)
 
 <a href='https://github.com/doehm/tidytues/blob/main/scripts/2023/week-21-squirrels/squirrels.R'>
 <img src='scripts/2023/week-21-squirrels/squirrels.png'/></a>
-
-## [Week 20: Tornadoes](https://github.com/doehm/tidytues/blob/main/scripts/2023/week-20-tornados/tornados.R)
-
-<a href='https://github.com/doehm/tidytues/blob/main/scripts/2023/week-20-tornados/tornados.R'><img src='scripts/2023/week-20-tornados/tornados.png'/></a>
 
 ## [Week 20: Tornadoes](https://github.com/doehm/tidytues/blob/main/scripts/2023/week-20-tornados/tornados.R)
 
