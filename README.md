@@ -5,6 +5,11 @@ For reasons that I don’t fully understand I had to decommission my old
 repo. I will one day migrate it over here but in the meantime here is a
 link to my [Old TidyTuesday repo](https://github.com/doehm/tidyTuesday)
 
+## [Week 23: Energy Production](https://github.com/doehm/tidytues/blob/main/scripts/2023/week-23-energy/energy.R)
+
+<a href='https://github.com/doehm/tidytues/blob/main/scripts/2023/week-23-energy/energy.R'>
+<img src='scripts/2023/week-23-energy/energy.png'/></a>
+
 ## [Week 22: Centenarians](https://github.com/doehm/tidytues/blob/main/scripts/2023/week-22-centenarians/centenarians.R)
 
 <a href='https://github.com/doehm/tidytues/blob/main/scripts/2023/week-22-centenarians/centenarians.R'>
