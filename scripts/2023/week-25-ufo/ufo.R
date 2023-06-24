@@ -175,27 +175,34 @@ g_base <- ggplot() +
     axis.text.x = element_text()
   )
 
+# quotes
+# doing the quotes as individual charts to add.
+# A bit clunky but the path of least resistance
 quote1 <- ggplot() +
-  annotate("text", x = 0, y = 1, label = str_wrap(quotes[1], 40), family = ft1, colour = txt, size = 16, hjust = 0, fontface = "italic", lineheight = 0.4) +
+  annotate("text", x = 0, y = 1, label = str_wrap(quotes[1], 40),
+           family = ft1, colour = txt, size = 16, hjust = 0, fontface = "italic", lineheight = 0.4) +
   xlim(0, 1) +
   ylim(0, 1) +
   theme_void() +
   coord_cartesian(clip = "off")
 
 quote2 <- ggplot() +
-  annotate("text", x = 0, y = 1, label = str_wrap(quotes[2], 25), family = ft1, colour = txt, size = 16, hjust = 0, fontface = "italic", lineheight = 0.4) +
+  annotate("text", x = 0, y = 1, label = str_wrap(quotes[2], 25),
+           family = ft1, colour = txt, size = 16, hjust = 0, fontface = "italic", lineheight = 0.4) +
   xlim(0, 1) +
   ylim(0, 1) +
   theme_void() +
   coord_cartesian(clip = "off")
 
 quote3 <- ggplot() +
-  annotate("text", x = 0, y = 1, label = str_wrap(quotes[3], 25), family = ft1, colour = txt, size = 16, hjust = 0, fontface = "italic", lineheight = 0.4) +
+  annotate("text", x = 0, y = 1, label = str_wrap(quotes[3], 25),
+           family = ft1, colour = txt, size = 16, hjust = 0, fontface = "italic", lineheight = 0.4) +
   xlim(0, 1) +
   ylim(0, 1) +
   theme_void() +
   coord_cartesian(clip = "off")
 
+# final chart
 g_final <- g_base +
   inset_element(g_shape, left = 0, right = 1, top = 1, bottom = 0.66) +
   inset_element(g_us, left = 0.42, right = 1, top = 0.74, bottom = 0.33) +
