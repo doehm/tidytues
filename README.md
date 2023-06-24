@@ -1,4 +1,11 @@
 
+<style type="text/css">
+img {
+  max-height: 800px
+}
+
+</style>
+
 Click on header or the chart for the code.
 
 For reasons that I don’t fully understand I had to decommission my old
@@ -8,7 +15,7 @@ link to my [Old TidyTuesday repo](https://github.com/doehm/tidyTuesday)
 ## [Week 25: UFO Sightings](https://github.com/doehm/tidytues/blob/main/scripts/2023/week-25-ufo/ufo.R)
 
 <a href='https://github.com/doehm/tidytues/blob/main/scripts/2023/week-25-ufo/ufo.R'>
-<img src='scripts/2023/week-25-ufo/ufo.png' height=1000/></a>
+<img src='scripts/2023/week-25-ufo/ufo.png'/></a>
 
 ## [Week 24: SAFI Survey Data](https://github.com/doehm/tidytues/blob/main/scripts/2023/week-24-safi/safi.R)
 
@@ -80,7 +87,7 @@ link to my [Old TidyTuesday repo](https://github.com/doehm/tidyTuesday)
 
 ## [Week 8: Bob Ross Paintings](https://github.com/doehm/tidytues/blob/main/scripts/2023/week-8-bob-ross/bob-ross.R)
 
-<a href='https://github.com/doehm/tidytues/blob/main/scripts/2023/week-8-bob-ross/bob-ross.R'><img src='scripts/2023/week-8-bob-ross/bob-ross.png' height = 800/></a>
+<a href='https://github.com/doehm/tidytues/blob/main/scripts/2023/week-8-bob-ross/bob-ross.R'><img src='scripts/2023/week-8-bob-ross/bob-ross.png'/></a>
 
 ## [Week 7: Hollywood Relationships](https://github.com/doehm/tidytues/blob/main/scripts/2023/week-7-hollywood/hollywood.R)
 
@@ -96,11 +103,11 @@ link to my [Old TidyTuesday repo](https://github.com/doehm/tidyTuesday)
 
 ## [Week 4: Alone](https://github.com/doehm/tidytues/blob/main/scripts/2023/week-4-alone/alone.R)
 
-<a href='https://github.com/doehm/tidytues/blob/main/scripts/2023/week-4-alone/alone.R'><img src='scripts/2023/week-4-alone/alone.png' height = 800/></a>
+<a href='https://github.com/doehm/tidytues/blob/main/scripts/2023/week-4-alone/alone.R'><img src='scripts/2023/week-4-alone/alone.png'/></a>
 
 ## [Week 3: Art history](https://github.com/doehm/tidytues/blob/main/scripts/2023/week-3-artists/artists.R)
 
-<a href='https://github.com/doehm/tidytues/blob/main/scripts/2023/week-3-artists/artists.R'><img src='scripts/2023/week-3-artists/artists.png'height = 800/></a>
+<a href='https://github.com/doehm/tidytues/blob/main/scripts/2023/week-3-artists/artists.R'><img src='scripts/2023/week-3-artists/artists.png'/></a>
 
 ## [Week 2: Project FeederWatch](https://github.com/doehm/tidytues/blob/main/scripts/2023/week-2-birds/birds.R)
 
@@ -117,7 +124,7 @@ link to my [Old TidyTuesday repo](https://github.com/doehm/tidyTuesday)
 
 </div>
 
-<a href='https://github.com/doehm/tidytues/blob/main/scripts/2023/week-1-BYOD/mischa.R'><img src='scripts/2023/week-1-BYOD/mischa.png' height = 800/></a>
+<a href='https://github.com/doehm/tidytues/blob/main/scripts/2023/week-1-BYOD/mischa.R'><img src='scripts/2023/week-1-BYOD/mischa.png'/></a>
 
 # 2022
 
@@ -132,7 +139,7 @@ link to my [Old TidyTuesday repo](https://github.com/doehm/tidyTuesday)
 ## [Week 50: US Monthly Retail Sales](https://github.com/doehm/tidytues/blob/main/scripts/2022/week-50-retail/retail.png)
 
 <a href='https://github.com/doehm/tidytues/blob/main/scripts/2022/week-50-retail/retail.R'>
-<img src='scripts/2022/week-50-retail/retail.png' height = 800/> </a>
+<img src='scripts/2022/week-50-retail/retail.png'/> </a>
 
 ## [Week 49: Elevators of NYC](https://github.com/doehm/tidytues/blob/main/scripts/2022/week-49-elevators/elevators.R)
 
