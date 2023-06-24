@@ -1,9 +1,8 @@
 
-<style type="text/css">
+<style>
 img {
   max-height: 800px
 }
-
 </style>
 
 Click on header or the chart for the code.
