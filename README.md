@@ -1,10 +1,4 @@
 
-<style>
-img {
-  max-height: 800px
-}
-</style>
-
 Click on header or the chart for the code.
 
 For reasons that I don’t fully understand I had to decommission my old
@@ -13,7 +7,7 @@ link to my [Old TidyTuesday repo](https://github.com/doehm/tidyTuesday)
 
 ## [Week 25: UFO Sightings](https://github.com/doehm/tidytues/blob/main/scripts/2023/week-25-ufo/ufo.R)
 
-<a href='https://github.com/doehm/tidytues/blob/main/scripts/2023/week-25-ufo/ufo.R'>
+<a href='https://github.com/doehm/tidytues/blob/main/scripts/2023/week-25-ufo/ufo.png'>
 <img src='scripts/2023/week-25-ufo/ufo.png'/></a>
 
 ## [Week 24: SAFI Survey Data](https://github.com/doehm/tidytues/blob/main/scripts/2023/week-24-safi/safi.R)
@@ -167,5 +161,9 @@ link to my [Old TidyTuesday repo](https://github.com/doehm/tidyTuesday)
 
 .ht {
   max-height:800px
+}
+
+img {
+  max-height: 800px
 }
 </style>
