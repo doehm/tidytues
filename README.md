@@ -5,6 +5,16 @@ For reasons that I don’t fully understand I had to decommission my old
 repo. I will one day migrate it over here but in the meantime here is a
 link to my [Old TidyTuesday repo](https://github.com/doehm/tidyTuesday)
 
+## [Week 25: UFO Sightings](https://github.com/doehm/tidytues/blob/main/scripts/2023/week-25-ufo/ufo.R)
+
+<a href='https://github.com/doehm/tidytues/blob/main/scripts/2023/week-25-ufo/ufo.R'>
+<img src='scripts/2023/week-25-ufo/ufo.png' height=1000/></a>
+
+## [Week 24: SAFI Survey Data](https://github.com/doehm/tidytues/blob/main/scripts/2023/week-24-safi/safi.R)
+
+<a href='https://github.com/doehm/tidytues/blob/main/scripts/2023/week-24-safi/safi.R'>
+<img src='scripts/2023/week-24-safi/safi.png'/></a>
+
 ## [Week 23: Energy Production](https://github.com/doehm/tidytues/blob/main/scripts/2023/week-23-energy/energy.R)
 
 <a href='https://github.com/doehm/tidytues/blob/main/scripts/2023/week-23-energy/energy.R'>
