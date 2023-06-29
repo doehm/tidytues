@@ -5,6 +5,11 @@ For reasons that I don’t fully understand I had to decommission my old
 repo. I will one day migrate it over here but in the meantime here is a
 link to my [Old TidyTuesday repo](https://github.com/doehm/tidyTuesday)
 
+## [Week 26: US Places](https://github.com/doehm/tidytues/blob/main/scripts/2023/week-26-us-places/us-places.R)
+
+<a href='https://github.com/doehm/tidytues/blob/main/scripts/2023/week-26-us-places/us-places.png'>
+<img src='scripts/2023/week-26-us-places/us-places.png'/></a>
+
 ## [Week 25: UFO Sightings](https://github.com/doehm/tidytues/blob/main/scripts/2023/week-25-ufo/ufo.R)
 
 <a href='https://github.com/doehm/tidytues/blob/main/scripts/2023/week-25-ufo/ufo.png'>
@@ -12,35 +17,35 @@ link to my [Old TidyTuesday repo](https://github.com/doehm/tidyTuesday)
 
 ## [Week 24: SAFI Survey Data](https://github.com/doehm/tidytues/blob/main/scripts/2023/week-24-safi/safi.R)
 
-<a href='https://github.com/doehm/tidytues/blob/main/scripts/2023/week-24-safi/safi.R'>
+<a href='https://github.com/doehm/tidytues/blob/main/scripts/2023/week-24-safi/safi.png'>
 <img src='scripts/2023/week-24-safi/safi.png'/></a>
 
 ## [Week 23: Energy Production](https://github.com/doehm/tidytues/blob/main/scripts/2023/week-23-energy/energy.R)
 
-<a href='https://github.com/doehm/tidytues/blob/main/scripts/2023/week-23-energy/energy.R'>
+<a href='https://github.com/doehm/tidytues/blob/main/scripts/2023/week-23-energy/energy.png'>
 <img src='scripts/2023/week-23-energy/energy.png'/></a>
 
 ## [Week 22: Centenarians](https://github.com/doehm/tidytues/blob/main/scripts/2023/week-22-centenarians/centenarians.R)
 
-<a href='https://github.com/doehm/tidytues/blob/main/scripts/2023/week-22-centenarians/centenarians.R'>
+<a href='https://github.com/doehm/tidytues/blob/main/scripts/2023/week-22-centenarians/centenarians.png'>
 <img src='scripts/2023/week-22-centenarians/centenarians.png'/></a>
 
 ## [Week 21: Squirrels](https://github.com/doehm/tidytues/blob/main/scripts/2023/week-21-squirrels/squirrels.R)
 
-<a href='https://github.com/doehm/tidytues/blob/main/scripts/2023/week-21-squirrels/squirrels.R'>
+<a href='https://github.com/doehm/tidytues/blob/main/scripts/2023/week-21-squirrels/squirrels.png'>
 <img src='scripts/2023/week-21-squirrels/squirrels.png'/></a>
 
 ## [Week 20: Tornadoes](https://github.com/doehm/tidytues/blob/main/scripts/2023/week-20-tornados/tornados.R)
 
-<a href='https://github.com/doehm/tidytues/blob/main/scripts/2023/week-20-tornados/tornados.R'><img src='scripts/2023/week-20-tornados/tornados.png'/></a>
+<a href='https://github.com/doehm/tidytues/blob/main/scripts/2023/week-20-tornados/tornados.png'><img src='scripts/2023/week-20-tornados/tornados.png'/></a>
 
 ## [Week 19: Childcare services](https://github.com/doehm/tidytues/blob/main/scripts/2023/week-19-childcare/childcare.R)
 
-<a href='https://github.com/doehm/tidytues/blob/main/scripts/2023/week-19-childcare/childcare.R'><img src='scripts/2023/week-19-childcare/childcare.png'/></a>
+<a href='https://github.com/doehm/tidytues/blob/main/scripts/2023/week-19-childcare/childcare.png'><img src='scripts/2023/week-19-childcare/childcare.png'/></a>
 
 ## [Week 18: Portal Project](https://github.com/doehm/tidytues/blob/main/scripts/2023/week-18-portal/portal.R)
 
-<a href='https://github.com/doehm/tidytues/blob/main/scripts/2023/week-18-portal/portal.R'><img src='scripts/2023/week-18-portal/portal.png'/></a>
+<a href='https://github.com/doehm/tidytues/blob/main/scripts/2023/week-18-portal/portal.png'><img src='scripts/2023/week-18-portal/portal.png'/></a>
 
 ## [Week 17: London Marathon](https://github.com/doehm/tidytues/blob/main/scripts/2023/week-17-london-marathon/london-marathon.R)
 
@@ -151,19 +156,16 @@ link to my [Old TidyTuesday repo](https://github.com/doehm/tidyTuesday)
   height: 800px;
   margin: 0 auto;
 }
-
-#cover > img {
+&#10;#cover > img {
   float: left;
   border: 2px solid black;
   width: 45%;
   margin: 1.66%;
 }
-
-.ht {
+&#10;.ht {
   max-height:800px
 }
-
-img {
+&#10;img {
   max-height: 800px
 }
 </style>
