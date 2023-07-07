@@ -5,6 +5,11 @@ For reasons that I don’t fully understand I had to decommission my old
 repo. I will one day migrate it over here but in the meantime here is a
 link to my [Old TidyTuesday repo](https://github.com/doehm/tidyTuesday)
 
+## [Week 27: Markers](https://github.com/doehm/tidytues/blob/main/scripts/2023/week-27-markers/markers.R)
+
+<a href='https://github.com/doehm/tidytues/blob/main/scripts/2023/week-27-markers/markers.R'>
+<img src='scripts/2023/week-27-markers/markers.png'/></a>
+
 ## [Week 26: US Places](https://github.com/doehm/tidytues/blob/main/scripts/2023/week-26-us-places/us-places.R)
 
 <a href='https://github.com/doehm/tidytues/blob/main/scripts/2023/week-26-us-places/us-places.png'>
