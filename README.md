@@ -5,7 +5,14 @@ For reasons that I don’t fully understand I had to decommission my old
 repo. I will one day migrate it over here but in the meantime here is a
 link to my [Old TidyTuesday repo](https://github.com/doehm/tidyTuesday)
 
-## [Week 27: Markers](https://github.com/doehm/tidytues/blob/main/scripts/2023/week-27-markers/markers.R)
+## [Week 28: Global Surface Temperatures](https://github.com/doehm/tidytues/blob/main/scripts/2023/week-28-temperatures/temperatures.R)
+
+<a href='https://github.com/doehm/tidytues/blob/main/scripts/2023/week-28-temperatures/temperatures.R'>
+<img src='scripts/2023/week-28-temperatures/temperatures.png'/></a>
+<a href='https://github.com/doehm/tidytues/blob/main/scripts/2023/week-28-temperatures/temperatures.R'>
+<img src='scripts/2023/week-28-temperatures/hist.png'/></a>
+
+## [Week 27: Historical Markers](https://github.com/doehm/tidytues/blob/main/scripts/2023/week-27-markers/markers.R)
 
 <a href='https://github.com/doehm/tidytues/blob/main/scripts/2023/week-27-markers/markers.R'>
 <img src='scripts/2023/week-27-markers/markers.png'/></a>
