@@ -5,6 +5,11 @@ For reasons that I don’t fully understand I had to decommission my old
 repo. I will one day migrate it over here but in the meantime here is a
 link to my [Old TidyTuesday repo](https://github.com/doehm/tidyTuesday)
 
+## [Week 29: GPT detectors](https://github.com/doehm/tidytues/blob/main/scripts/2023/week-29-gpt/gpt.R)
+
+<a href='https://github.com/doehm/tidytues/blob/main/scripts/2023/week-29-gpt/gpt.R'>
+<img src='scripts/2023/week-29-gpt/gpt.png'/></a>
+
 ## [Week 28: Global Surface Temperatures](https://github.com/doehm/tidytues/blob/main/scripts/2023/week-28-temperatures/temperatures.R)
 
 <a href='https://github.com/doehm/tidytues/blob/main/scripts/2023/week-28-temperatures/temperatures.R'>

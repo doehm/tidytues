@@ -154,8 +154,8 @@ df_base |>
   geom_col(aes(t, temp, fill = temp), width = 1) +
   annotate("rect", xmin = 0, xmax = 1722, ymin = -0.025, ymax = 0.025, fill = bg) +
   geom_text(aes(t, 0, label = year), df_years, family = ft, size = 16, colour = txt) +
-  annotate("text", x = 1, y = 1.25, label = "Global Surface\nTemperatures", family = ft, size = 48, colour = txt, hjust = 0, fontface = "bold", lineheight = 0.3) +
-  annotate("text", x = 1, y = 1.1, label = str_wrap(subtitle, 32), family = ft, size = 24, colour = txt, hjust = 0, lineheight = 0.3, vjust = 1) +
+  annotate("text", x = 1, y = 1.25, label = "Global Surface\nTemperatures", family = ft, size = 48, colour = txt, hjust = 0, fontface = "bold", lineheight = 0.3, vjust = 1) +
+  annotate("text", x = 1, y = 1.05, label = str_wrap(subtitle, 32), family = ft, size = 24, colour = txt, hjust = 0, lineheight = 0.3, vjust = 1) +
   scale_y_continuous(breaks = seq(-0.75, 1.25, 0.25), position = "right") +
   scale_x_continuous(breaks = df_years$t, labels = df_years$year) +
   scale_fill_gradientn(colours = pal) +

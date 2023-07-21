@@ -45,3 +45,21 @@ make_tweet <- function(name, week) {
 min_max <- function(x, a, b) {
   (b - a) * (x - min(x)) / (max(x) - min(x)) + a
 }
+
+
+#' Title
+#'
+#' @param accent
+#' @param data
+#'
+#' @return
+#' @export
+make_caption <- function(accent, data) {
+  mastodon <- glue("<span style='font-family:fa-brands; color:{accent}'>&#xf4f6;</span>")
+  twitter <- glue("<span style='font-family:fa-brands; color:{accent}'>&#xf099;</span>")
+  github <- glue("<span style='font-family:fa-brands; color:{accent}'>&#xf09b;</span>")
+  floppy <- glue("<span style='font-family:fa-solid; color:{accent}'>&#xf0c7;</span>")
+  space <- glue("<span style='color:{bg};font-size:1px'>'</span>")
+  space2 <- glue("<span style='color:{bg}'>-</span>") # can't believe I'm doing this
+  glue("{mastodon}{space2}@danoehm@{space}fosstodon.org{space2}{twitter}{space2}@danoehm{space2}{github}{space2}doehm/tidytues{space2}{floppy}{space2}{data}")
+}
