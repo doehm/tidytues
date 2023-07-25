@@ -5,10 +5,15 @@ For reasons that I don’t fully understand I had to decommission my old
 repo. I will one day migrate it over here but in the meantime here is a
 link to my [Old TidyTuesday repo](https://github.com/doehm/tidyTuesday)
 
+## [Week 30: Scurvy](https://github.com/doehm/tidytues/blob/main/scripts/2023/week-30-scurvy/scurvy.R)
+
+<a href='https://github.com/doehm/tidytues/blob/main/scripts/2023/week-30-scurvy/scurvy.R'>
+<img src='scripts/2023/week-30-scurvy/medical-records/scurvy-1.png' height=800/></a>
+
 ## [Week 29: GPT detectors](https://github.com/doehm/tidytues/blob/main/scripts/2023/week-29-gpt/gpt.R)
 
 <a href='https://github.com/doehm/tidytues/blob/main/scripts/2023/week-29-gpt/gpt.R'>
-<img src='scripts/2023/week-29-gpt/gpt.png'/></a>
+<img src='scripts/2023/week-29-gpt/gpt.png' height=800/></a>
 
 ## [Week 28: Global Surface Temperatures](https://github.com/doehm/tidytues/blob/main/scripts/2023/week-28-temperatures/temperatures.R)
 
