@@ -7,6 +7,9 @@ link to my [Old TidyTuesday repo](https://github.com/doehm/tidyTuesday)
 
 ## [Week 30: Scurvy](https://github.com/doehm/tidytues/blob/main/scripts/2023/week-30-scurvy/scurvy.R)
 
+Sorry. Somehow my script was deleted and is lost forever. I blame my 2
+year old.
+
 <a href='https://github.com/doehm/tidytues/blob/main/scripts/2023/week-30-scurvy/scurvy.R'>
 <img src='scripts/2023/week-30-scurvy/medical-records/scurvy-1.png' height=800/></a>
 
