@@ -44,9 +44,11 @@ showtext_auto()
 
 df_base <- states |>
   mutate(
+    state = glue("{state} ({n_representatives})"),
     n_reps_per_1m = n_representatives/(population_2020/1e6),
     index = n_reps_per_1m/n_reps_per_1m[which(abb == "CA")],
     index_lab = paste0(round(index-1, 3)*100, "%"),
+    index_lab1 = paste0(round(n_reps_per_1m, 1), " / ", round(index-1, 3)*100, "%"),
     state = fct_reorder(state, index, min),
     y_text = ifelse(index < 1, index-1.01, index - 0.99),
     y_state = ifelse(index < 1, 0.01, -0.01),
@@ -65,7 +67,7 @@ df_base <- states |>
 caption <- make_caption(accent, "US states")
 title <-
 "Representation
-of US States"
+of US states"
 subtitle <-
 "US States are either over or under
 represented given their population
@@ -85,7 +87,10 @@ have over 30% more representation than
 California.
 
 Delaware has the least representation
-at 23% less than California"
+at 23% less than California.
+
+Number in brackets indicates the number
+of representatives for the state."
 
 # 📊 plot --------------------------------------------------------------------
 
@@ -116,8 +121,8 @@ g_bar <- df_base |>
 g_facet <- df_base |>
   ggplot() +
   geom_rect(aes(xmin = 0, xmax = 1, ymin = 0, ymax = 1, fill = col)) +
-  geom_text(aes(0.5, 0.66, label = abb), family = ft, size = 24, fontface = "bold", colour = bg) +
-  geom_text(aes(0.5, 0.3, label = index_lab), family = ft, size = 12, colour = bg) +
+  geom_text(aes(0.5, 0.66, label = abb), family = ft, size = 20, fontface = "bold", colour = bg) +
+  geom_text(aes(0.5, 0.3, label = index_lab1), family = ft, size = 9, colour = bg) +
   facet_geo(~abb) +
   scale_fill_identity() +
   theme_void() +
