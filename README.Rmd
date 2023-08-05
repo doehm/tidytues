@@ -7,6 +7,11 @@ Click on header or the chart for the code.
 
 For reasons that I don't fully understand I had to decommission my old repo. I will one day migrate it over here but in the meantime here is a link to my [Old TidyTuesday repo](https://github.com/doehm/tidyTuesday)
 
+## [Week 31: US States](https://github.com/doehm/tidytues/blob/main/scripts/2023/week-31-us-states/us-states.R)
+
+<a href='https://github.com/doehm/tidytues/blob/main/scripts/2023/week-31-us-states/us-states.R'>
+  <img src='scripts/2023/week-31-us-states/us-states.png'/></a>
+
 ## [Week 30: Scurvy](https://github.com/doehm/tidytues/blob/main/scripts/2023/week-30-scurvy/scurvy.R)
 Sorry. Somehow my script was deleted and is lost forever. I blame my 2 year old.
 
