@@ -47,6 +47,7 @@ df_base <- states |>
     state = glue("{state} ({n_representatives})"),
     n_reps_per_1m = n_representatives/(population_2020/1e6),
     index = n_reps_per_1m/n_reps_per_1m[which(abb == "CA")],
+    d = n_reps_per_1m - n_reps_per_1m[which(abb == "CA")],
     index_lab = paste0(round(index-1, 3)*100, "%"),
     index_lab1 = paste0(round(n_reps_per_1m, 1), " / ", round(index-1, 3)*100, "%"),
     state = fct_reorder(state, index, min),
@@ -140,3 +141,26 @@ g_bar +
 
 ggsave("scripts/2023/week-31-us-states/us-states.png", height = 12, width = 20)
 
+df_base |>
+  ggplot() +
+  geom_col(aes(state, d, fill = col)) +
+  # geom_text(aes(state, y_text, label = index_lab), family = ft, size = 12, colour = txt, hjust = df_base$hjust) +
+  # geom_text(aes(state, y_state, label = state), family = ft, size = 12, colour = txt, hjust = df_base$hjust_state) +
+  # annotate("text", x = 42, y = -0.23, label = subtitle, family = ft, colour = txt, size = 16, lineheight = 0.35, hjust = 0, vjust = 1) +
+  # annotate("text", x = 50, y = -0.23, label = title, family = ft, colour = txt, size = 48, lineheight = 0.35, hjust = 0, vjust = 1, fontface = "bold") +
+  scale_fill_identity() +
+  coord_flip(clip = "off") +
+  labs(
+    caption = caption,
+    fill = "Index"
+  ) +
+  theme_void() +
+  theme(
+    text = element_text(family = ft, size = 48, lineheight = 0.3, colour = txt),
+    plot.background = element_rect(fill = bg, colour = bg),
+    plot.title = element_text(size = 128, hjust = 0, face = "bold"),
+    plot.subtitle = element_text(),
+    plot.caption = element_markdown(colour = txt, hjust = 0.5, margin = margin(t = 20)),
+    plot.margin = margin(b = 20, t = 50, r = 50, l = 50),
+    legend.position = "none"
+  )
