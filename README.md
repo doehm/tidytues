@@ -5,6 +5,11 @@ For reasons that I don’t fully understand I had to decommission my old
 repo. I will one day migrate it over here but in the meantime here is a
 link to my [Old TidyTuesday repo](https://github.com/doehm/tidyTuesday)
 
+## [Week 33: Spam](https://github.com/doehm/tidytues/blob/main/scripts/2023/week-33-Spam/Spam.R)
+
+<a href='https://github.com/doehm/tidytues/blob/main/scripts/2023/week-33-spam/spam.R'>
+<img src='scripts/2023/week-33-spam/spam.png'/></a>
+
 ## [Week 32: Hot Ones](https://github.com/doehm/tidytues/blob/main/scripts/2023/week-32-hot-ones/hot-ones.R)
 
 <a href='https://github.com/doehm/tidytues/blob/main/scripts/2023/week-32-hot-ones/hot-ones.R'>
