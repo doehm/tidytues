@@ -5,6 +5,11 @@ For reasons that I don’t fully understand I had to decommission my old
 repo. I will one day migrate it over here but in the meantime here is a
 link to my [Old TidyTuesday repo](https://github.com/doehm/tidyTuesday)
 
+## [Week 34: Refugees](https://github.com/doehm/tidytues/blob/main/scripts/2023/week-34-refugees/refugees.R)
+
+<a href='https://github.com/doehm/tidytues/blob/main/scripts/2023/week-34-refugees/refugees.R'>
+<img src='scripts/2023/week-34-refugees/refugees.png'/></a>
+
 ## [Week 33: Spam](https://github.com/doehm/tidytues/blob/main/scripts/2023/week-33-Spam/Spam.R)
 
 <a href='https://github.com/doehm/tidytues/blob/main/scripts/2023/week-33-spam/spam.R'>
@@ -189,23 +194,3 @@ year old.
 <a href='https://github.com/doehm/tidytues/blob/main/scripts/2022/week-48-FIFA-world-cup/FIFA-world-cup.R'>
 <img src='scripts/2022/week-48-FIFA-world-cup/FIFA-world-cup.png' />
 </a>
-
-<style type="text/css">
-#cover {
-  width: 800px;
-  height: 800px;
-  margin: 0 auto;
-}
-&#10;#cover > img {
-  float: left;
-  border: 2px solid black;
-  width: 45%;
-  margin: 1.66%;
-}
-&#10;.ht {
-  max-height:800px
-}
-&#10;img {
-  max-height: 800px
-}
-</style>
