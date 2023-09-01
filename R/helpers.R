@@ -12,8 +12,8 @@
 readme_text <- function(week, name, year = 2023) {
   glue("## [Week {week}: {str_to_title(name)}](https://github.com/doehm/tidytues/blob/main/scripts/{year}/week-{week}-{name}/{name}.R)
 
-  <a href='https://github.com/doehm/tidytues/blob/main/scripts/{year}/week-{week}-{name}/{name}.R'>
-    <img src='scripts/{year}/week-{week}-{name}/{name}.png'/></a>")
+  <a href='https://github.com/doehm/tidytues/blob/main/scripts/{year}/week-{week}-{name}/{name}.png'>
+    <img src='scripts/{year}/week-{week}-{name}/{name}-s.png'/></a>")
 }
 
 
@@ -59,7 +59,36 @@ make_caption <- function(accent, data) {
   twitter <- glue("<span style='font-family:fa-brands; color:{accent}'>&#xf099;</span>")
   github <- glue("<span style='font-family:fa-brands; color:{accent}'>&#xf09b;</span>")
   floppy <- glue("<span style='font-family:fa-solid; color:{accent}'>&#xf0c7;</span>")
+  threads <- glue("<span style='font-family:fa-brands; color:{accent}'>&#xe618;</span>")
   space <- glue("<span style='color:{bg};font-size:1px'>'</span>")
   space2 <- glue("<span style='color:{bg}'>-</span>") # can't believe I'm doing this
-  glue("{mastodon}{space2}@danoehm@{space}fosstodon.org{space2}{twitter}{space2}@danoehm{space2}{github}{space2}doehm/tidytues{space2}{floppy}{space2}{data}")
+  glue("{twitter}{space2}@danoehm{space2}{github}{space2}doehm/tidytues{space2}{threads}{space2}Threads{space2}{mastodon}{space2}@danoehm@{space}fosstodon.org")
+}
+
+#' Title
+#'
+#' @param x
+#'
+#' @return
+#' @export
+to_pct <- function(x) {
+  paste0(round(x, 2)*100, "%")
+}
+
+
+#' Title
+#'
+#' @param week Week
+#' @param year Year
+#'
+#' @return
+#' @export
+make_image_small <- function(week, year = 2023) {
+  dir <- list.files("scripts/2023", pattern = as.character(week), full.names = TRUE)
+  lab <- str_extract(dir, "(?<=[:digit:]{1,2}-).+")
+  img <- paste0(dir, "/", lab, ".png")
+  new_file <- paste0(dir, "/", lab, "-s.png")
+  image_read(img) |>
+    image_resize("x1440") |>
+    image_write(new_file)
 }
