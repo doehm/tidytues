@@ -12,7 +12,7 @@ link to my [Old TidyTuesday repo](https://github.com/doehm/tidyTuesday)
 
 ## [Week 34: Refugees](https://github.com/doehm/tidytues/blob/main/scripts/2023/week-34-refugees/refugees.R)
 
-<a href='https://github.com/doehm/tidytues/blob/main/scripts/2023/week-34-refugees/refugees.png'>
+<a href='https://github.com/doehm/tidytues/blob/main/scripts/2023/week-34-refugees/refugees.R'>
 <img src='scripts/2023/week-34-refugees/refugees.png'/></a>
 
 ## [Week 33: Spam](https://github.com/doehm/tidytues/blob/main/scripts/2023/week-33-Spam/Spam.R)
