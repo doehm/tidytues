@@ -113,7 +113,7 @@ g_base <- tibble(pred = pred) |>
     text = element_text(family = ft, colour = txt, size = 48),
     plot.background = element_rect(fill = bg, colour = bg),
     plot.margin = margin(l = 100, r = 100, t = 60, b = 50),
-    plot.caption = element_markdown(hjust = 0.5, margin = margin(t = 250), colour = "grey80"),
+    plot.caption = element_markdown(hjust = 0.5, margin = margin(t = 250), colour = txt2),
     plot.title = element_text(hjust = 0.5, size = 128, margin = margin(b = 20), face = "bold"),
     plot.subtitle = element_text(hjust = 0.5, size = 48, colour = txt2, lineheight = 0.3),
     axis.text.x = element_text(),
