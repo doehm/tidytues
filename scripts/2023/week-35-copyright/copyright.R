@@ -30,7 +30,6 @@ showtext_auto()
 # For fuck sake
 # Rstudio replaced my code with an old version
 # I'm not re-writing it
-# Fuck you
 
 # 🔡 text --------------------------------------------------------------------
 

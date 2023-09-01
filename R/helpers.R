@@ -89,6 +89,6 @@ make_image_small <- function(week, year = 2023) {
   img <- paste0(dir, "/", lab, ".png")
   new_file <- paste0(dir, "/", lab, "-s.png")
   image_read(img) |>
-    image_resize("x1440") |>
+    image_resize("x1080") |>
     image_write(new_file)
 }
