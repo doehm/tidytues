@@ -5,6 +5,11 @@ For reasons that I don’t fully understand I had to decommission my old
 repo. I will one day migrate it over here but in the meantime here is a
 link to my [Old TidyTuesday repo](https://github.com/doehm/tidyTuesday)
 
+## [Week 36: Unions](https://github.com/doehm/tidytues/blob/main/scripts/2023/week-36-unions/unions.R)
+
+<a href='https://github.com/doehm/tidytues/blob/main/scripts/2023/week-36-unions/unions.png'>
+<img src='scripts/2023/week-36-unions/unions-s.png'/></a>
+
 ## [Week 35: Copyright](https://github.com/doehm/tidytues/blob/main/scripts/2023/week-35-copyright/copyright.R)
 
 <a href='https://github.com/doehm/tidytues/blob/main/scripts/2023/week-35-copyright/copyright.png'>

@@ -62,7 +62,7 @@ make_caption <- function(accent, data) {
   threads <- glue("<span style='font-family:fa-brands; color:{accent}'>&#xe618;</span>")
   space <- glue("<span style='color:{bg};font-size:1px'>'</span>")
   space2 <- glue("<span style='color:{bg}'>-</span>") # can't believe I'm doing this
-  glue("{twitter}{space2}@danoehm{space2}{github}{space2}doehm/tidytues{space2}{threads}{space2}Threads{space2}{mastodon}{space2}@danoehm@{space}fosstodon.org")
+  glue("{twitter}{space2}@danoehm{space2}{github}{space2}doehm/tidytues{space2}{threads}{space2}@danoehm{space2}{mastodon}{space2}@danoehm@{space}fosstodon.org")
 }
 
 #' Title
@@ -91,4 +91,16 @@ make_image_small <- function(week, year = 2023) {
   image_read(img) |>
     image_resize("x1080") |>
     image_write(new_file)
+}
+
+
+#' Title
+#'
+#' @param text
+#' @param col
+#'
+#' @return
+#' @export
+ct <- function(text, col) {
+  glue("<span style='color:{col};'>{text}</span>")
 }
