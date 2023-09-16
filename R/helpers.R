@@ -104,3 +104,92 @@ make_image_small <- function(week, year = 2023) {
 ct <- function(text, col) {
   glue("<span style='color:{col};'>{text}</span>")
 }
+
+
+#' Breathing space
+#'
+#' To help tweakteyt positioning so there is no teyt overlap on
+#' the y ayis
+#'
+#' @param y Numeric vector for plotting on the y
+#' @param diff Minimum distance between points
+#' @param eps Tolerance. To ensure the algorithm stops when it's close enough
+#'
+#' @return Numeric vector
+#' @export
+#'
+#' @importFrom purrr map_dbl
+#' @importFrom lubridate ymd wday
+#' @importFrom glue glue
+#' @importFrom stringr str_pad
+#' @import dplyr
+#'
+#' @examples
+breathing_space <- function(y, diff, eps = 0.01) {
+  y0 <- sort(y, index.return = TRUE)
+  y_sorted <- y0$x
+  y_index <- map_dbl(1:length(y), ~which(y0$ix == .x))
+  d_lag <- y_sorted - lag(y_sorted)
+  d_lead <- lead(y_sorted) - y_sorted
+  K <- 2:length(y)
+
+  while(min(d_lag, na.rm = TRUE) < diff*(1-eps)) {
+    for(k in K) {
+      if(d_lag[k] < diff) {
+        y_sorted[k-1] <- y_sorted[k-1]-(diff-d_lag[k])/2
+        y_sorted[k] <- y_sorted[k]+(diff-d_lag[k])/2
+      }
+    }
+    d_lag <- y_sorted - lag(y_sorted)
+  }
+  y_sorted[y_index]
+}
+
+
+
+#' Title
+#'
+#' @param y
+#' @param d
+#' @param eps
+#'
+#' @return
+#' @export
+#'
+#' @examples
+breathing_space_on_x <- function(x, d, y0, dy, eps = 0.01) {
+  n <- length(x)
+  dd <- c(0, diff(x))
+  y_spaced <- rep(0, n)
+  for(k in 1:n) {
+    if(y_spaced[k] == 0) {
+      dk <- cumsum(dd[(k+1):(k+min(n, k+5))])
+      id <- which(dk < d)
+      if(length(id > 0)) {
+        y_spaced[(k+1):(k+length(id))] <- id
+      }
+    }
+  }
+  y_new <- y0 - seq(0, 10*dy, dy)
+  y_new[y_spaced+1]
+}
+
+
+#' Hours, minutes and seconds
+#'
+#' Converts a number vector of seconds into hh:mm:ss format
+#'
+#' @param seconds Numeric vector of seconds
+#'
+#' @return Character vector
+#' @export
+#'
+#' @examples to_hms(12345)
+to_hm <- function(seconds, fmt = "hm") {
+  hrs <- floor(seconds/3600)
+  mins <- floor(seconds/60) - hrs*60
+  secs <- seconds - mins*60 - hrs*3600
+  mins <- str_pad(mins, width = 2, pad = 0)
+  secs <- str_pad(secs, width = 2, pad = 0)
+  ifelse(hrs == 0, paste0(mins, "m"), paste0(hrs, "h ", mins, "m"))
+}

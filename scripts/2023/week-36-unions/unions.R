@@ -58,8 +58,8 @@ df_base <- demographics |>
 caption <- make_caption(accent, "Data")
 title <- "US Union Membership"
 text <- glue(
-"The {ct('public sector', pal[2])} has historical had much higher rates of union membership than the {ct('private sector', pal[1])}.<br>
-From 1990 to 2020 Union membership in the US has dropped {ct('1%', pal[2])} point in the {ct('public sector', pal[2])} and {ct('6%', pal[1])}<br>
+"Historically the {ct('public sector', pal[2])} has had much higher rates of union membership than the {ct('private sector', pal[1])}.<br>
+From 1990 to 2020 union membership in the US has dropped {ct('1%', pal[2])} point in the {ct('public sector', pal[2])} and {ct('6%', pal[1])}<br>
 points in the {ct('private sector', pal[1])} in terms of the percentage of total employment, effectively halving the<br>
 rate from 1990. Wages for the {ct('public sector', pal[2])} were, on average, 18% higher than the {ct('private sector', pal[1])}<br>
 in 1990 and only 4% in 2020")
