@@ -1,42 +1,59 @@
 
-#' Title
+#' Write readme text for the readme page
 #'
 #' @param week Week
-#' @param name Name
 #' @param year Year
 #'
 #' @return
 #' @export
 #'
 #' @examples
-readme_text <- function(week, name, year = 2023) {
-  glue("## [Week {week}: {str_to_title(name)}](https://github.com/doehm/tidytues/blob/main/scripts/{year}/week-{week}-{name}/{name}.R)
+readme_text <- function(week, year = 2023) {
 
-  <a href='https://github.com/doehm/tidytues/blob/main/scripts/{year}/week-{week}-{name}/{name}.png'>
-    <img src='scripts/{year}/week-{week}-{name}/{name}-s.png'/></a>")
+  # make image small
+  make_image_small(week)
+
+  # make readme text
+  dir <- list.files("scripts/2023", pattern = as.character(week), full.names = TRUE)
+  lab <- str_extract(dir, "(?<=[:digit:]{1,2}-).+")
+  title <- str_to_title(lab) |>
+    str_replace_all("-", " ")
+
+  # print tweet
+  cat(
+    glue("#TidyTuesday week {week}: {title}
+    🔗 http://github.com/doehm/tidytues
+    #Rstats #dataviz #r4ds #ggplot2\n\n")
+  )
+
+  # print readme text
+  glue("## [Week {week}: {title}](https://github.com/doehm/tidytues/blob/main/scripts/{year}/week-{week}-{lab}/{lab}.R)
+
+  <a href='https://github.com/doehm/tidytues/blob/main/scripts/{year}/week-{week}-{lab}/{lab}.png'>
+    <img src='scripts/{year}/week-{week}-{lab}/{lab}-s.png'/></a>")
 }
 
 
-#' Title
+#' Tweet template
 #'
-#' @param name
-#' @param week
+#' @param name Name for this week
+#' @param week Week
 #'
 #' @return
 #' @export
 #'
 #' @examples
 make_tweet <- function(name, week) {
-  glue("#TidyTuesday week {week}: {str_to_title(name)}
+  glue("#TidyTuesday week {week}: {name}
   🔗 http://github.com/doehm/tidytues
   #Rstats #dataviz #r4ds #ggplot2")
 }
 
-#' Title
+#' Min max
 #'
-#' @param x
-#' @param a
-#' @param b
+#' @param x Numeric vector
+#' @param a Min
+#' @param b Max
 #'
 #' @return
 #' @export
@@ -47,10 +64,10 @@ min_max <- function(x, a, b) {
 }
 
 
-#' Title
+#' Caption text
 #'
-#' @param accent
-#' @param data
+#' @param accent Colour of icon
+#' @param data Name of data
 #'
 #' @return
 #' @export
@@ -65,9 +82,9 @@ make_caption <- function(accent, data) {
   glue("{twitter}{space2}@danoehm{space2}{github}{space2}doehm/tidytues{space2}{threads}{space2}@danoehm{space2}{mastodon}{space2}@danoehm@{space}fosstodon.org")
 }
 
-#' Title
+#' To percent
 #'
-#' @param x
+#' @param x Numberic value
 #'
 #' @return
 #' @export
@@ -76,7 +93,9 @@ to_pct <- function(x) {
 }
 
 
-#' Title
+#' Make image small
+#'
+#' Makew the image small for the readme page
 #'
 #' @param week Week
 #' @param year Year
@@ -94,10 +113,10 @@ make_image_small <- function(week, year = 2023) {
 }
 
 
-#' Title
+#' Helper for richtext
 #'
-#' @param text
-#' @param col
+#' @param text Text
+#' @param col Colour
 #'
 #' @return
 #' @export
@@ -125,7 +144,7 @@ ct <- function(text, col) {
 #' @import dplyr
 #'
 #' @examples
-breathing_space <- function(y, diff, eps = 0.01) {
+breathing_space_on_y <- function(y, diff, eps = 0.01) {
   y0 <- sort(y, index.return = TRUE)
   y_sorted <- y0$x
   y_index <- map_dbl(1:length(y), ~which(y0$ix == .x))
@@ -147,17 +166,21 @@ breathing_space <- function(y, diff, eps = 0.01) {
 
 
 
-#' Title
+#' Breathing space on `x`
 #'
-#' @param y
-#' @param d
-#' @param eps
+#' If labels are too close and overlap, breathing space will stagger them to
+#' avoid overlap
+#'
+#' @param x Input vector
+#' @param d Minimum distance where two labels can be the same height
+#' @param y0 Initial `y` position
+#' @param dy Distance to stagger i.e. move up or down
 #'
 #' @return
 #' @export
 #'
 #' @examples
-breathing_space_on_x <- function(x, d, y0, dy, eps = 0.01) {
+breathing_space_on_x <- function(x, d, y0, dy) {
   n <- length(x)
   dd <- c(0, diff(x))
   y_spaced <- rep(0, n)
