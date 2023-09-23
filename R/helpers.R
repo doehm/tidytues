@@ -23,7 +23,7 @@ readme_text <- function(week, year = 2023) {
   cat(
     glue("#TidyTuesday week {week}: {title}
     🔗 http://github.com/doehm/tidytues
-    #Rstats #dataviz #r4ds #ggplot2\n\n")
+    #Rstats #dataviz #r4ds #ggplot2\n\n\n")
   )
 
   # print readme text
