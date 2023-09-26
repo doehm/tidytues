@@ -6,8 +6,6 @@ library(patchwork)
 library(janitor)
 library(glue)
 library(ggtext)
-library(igraph)
-library(ggnetwork)
 library(ggforce)
 library(ggbump)
 
