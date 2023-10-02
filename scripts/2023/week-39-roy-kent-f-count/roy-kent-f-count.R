@@ -56,12 +56,12 @@ df_total <- df |>
 df_season <- tibble(
   x = 0,
   y = 1:3 + 0.3,
-  lab = paste("Season", 1:3, " - ", df_total$n_fucks, "f**ks")
+  lab = paste("Season", 1:3, " - ", df_total$n_fucks)
 )
 
 # 🔡 text --------------------------------------------------------------------
 
-subtitle <- "The number of f-bombs unleashed by Roy Kent in Ted Lasso. Each 'U' is an episode and the number of f**ks."
+subtitle <- "The number of f-bombs unleashed by Roy Kent in Ted Lasso by season. Each 'U' is an episode and the number of fucks."
 caption <- make_caption(accent)
 
 caption <- paste0(subtitle, "<br>", caption)
@@ -71,7 +71,7 @@ caption <- paste0(subtitle, "<br>", caption)
 df |>
   ggplot() +
   geom_text(aes(x = episode, y = -season, label = "U"), family = ft1, colour = accent, fontface = "bold", size = df$n_fucks*3, hjust = 0.5, angle = df$angle) +
-  geom_text(aes(x = episode, y = -season, label = fck, size = n_fucks), df_fck, family = ft1, colour = txt, fontface = "bold", size = 90, hjust = 0.25, angle = 350) +
+  geom_text(aes(x = episode, y = -season, label = fck, size = n_fucks), df_fck, family = ft1, colour = txt, fontface = "bold", size = 90, hjust = 0.25) +
   geom_text(aes(x = x, y = -y, label = lab), df_season, family = ft, size = 12, colour = txt, hjust = 0, fontface = "italic") +
   # annotate("text", x = 8, y = -3.6, label = subtitle, family = ft, size = 12, colour = txt, fontface = "italic") +
   coord_cartesian(clip = "off") +
