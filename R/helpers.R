@@ -72,14 +72,19 @@ min_max <- function(x, a, b) {
 #' @return
 #' @export
 make_caption <- function(accent, data) {
-  mastodon <- glue("<span style='font-family:fa-brands; color:{accent}'>&#xf4f6;</span>")
-  twitter <- glue("<span style='font-family:fa-brands; color:{accent}'>&#xf099;</span>")
-  github <- glue("<span style='font-family:fa-brands; color:{accent}'>&#xf09b;</span>")
+
+  if(length(accent) != 4) {
+    accent <- rep(accent[1], 4)
+  }
+
+  github <- glue("<span style='font-family:fa-brands; color:{accent[1]}'>&#xf09b;</span>")
+  twitter <- glue("<span style='font-family:fa-brands; color:{accent[2]}'>&#xf099;</span>")
+  threads <- glue("<span style='font-family:fa-brands; color:{accent[3]}'>&#xe618;</span>")
+  mastodon <- glue("<span style='font-family:fa-brands; color:{accent[4]}'>&#xf4f6;</span>")
   floppy <- glue("<span style='font-family:fa-solid; color:{accent}'>&#xf0c7;</span>")
-  threads <- glue("<span style='font-family:fa-brands; color:{accent}'>&#xe618;</span>")
   space <- glue("<span style='color:{bg};font-size:1px'>'</span>")
   space2 <- glue("<span style='color:{bg}'>-</span>") # can't believe I'm doing this
-  glue("{twitter}{space2}@danoehm{space2}{github}{space2}doehm/tidytues{space2}{threads}{space2}@danoehm{space2}{mastodon}{space2}@danoehm@{space}fosstodon.org")
+  glue("{github}{space2}doehm/tidytues{space2}{twitter}{space2}@danoehm{space2}{threads}{space2}@danoehm{space2}{mastodon}{space2}@danoehm@{space}fosstodon.org")
 }
 
 #' To percent
@@ -88,8 +93,8 @@ make_caption <- function(accent, data) {
 #'
 #' @return
 #' @export
-to_pct <- function(x) {
-  paste0(round(x, 2)*100, "%")
+to_pct <- function(x, digit) {
+  paste0(round(x, digit)*100, "%")
 }
 
 
