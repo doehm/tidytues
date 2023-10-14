@@ -14,7 +14,7 @@ library(ggpath)
 library(colorspace)
 library(geofacet)
 
-Sys.setenv(OPENAI_API_KEY = "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")
+Sys.setenv(OPENAI_API_KEY = "")
 
 # 💾 load data ---------------------------------------------------------------
 
