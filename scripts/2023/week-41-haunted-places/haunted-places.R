@@ -14,6 +14,7 @@ library(ggpath)
 library(colorspace)
 library(geofacet)
 
+# you need to put your key in here
 Sys.setenv(OPENAI_API_KEY = "")
 
 # 💾 load data ---------------------------------------------------------------
