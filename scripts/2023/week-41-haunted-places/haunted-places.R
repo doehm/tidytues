@@ -15,16 +15,13 @@ library(colorspace)
 library(geofacet)
 
 # you need to put your key in here
-Sys.setenv(OPENAI_API_KEY = "")
+Sys.setenv(OPENAI_API_KEY = "xxxx")
 
 # 💾 load data ---------------------------------------------------------------
 
 dat <- tidytuesdayR::tt_load(2023, week = 41)
 places <- dat$haunted_places |>
-  mutate(
-    id = 1:n(),
-    # location = str_to_title(location)
-    ) |>
+  mutate(id = 1:n()) |>
   select(id, everything())
 
 # ✍️ fonts and palettes ------------------------------------------------------
@@ -45,6 +42,8 @@ showtext_auto()
 
 # 🪅 functions ------------------------------------------------------------
 
+# just to speed up the manual process of going to midjourney and saving down
+# the image from the url
 save_mj_image <- function(url) {
   path <- "scripts/2023/week-41-haunted-places/ghosts/"
   file_nums <- str_remove(list.files(path), ".png") |>
@@ -55,11 +54,13 @@ save_mj_image <- function(url) {
     image_write(new_path)
 }
 
+# helper for quickly reading a description
 read_description <- function(id) {
   x <- places$description[id]
   cat(str_wrap(x, 120))
 }
 
+# creates the prompt for summarising the description
 prompt <- function(id) {
   desc <- places$description[id]
   prompt <- glue("the following text describes a haunted place.
@@ -76,6 +77,7 @@ prompt <- function(id) {
   )
 }
 
+# call to gpt-4 to summarise the description
 description_summary <- function(id) {
   text <- places$description[id]
   gpt_output <- create_chat_completion(
@@ -92,6 +94,7 @@ description_summary <- function(id) {
   gpt_output$choices$message.content
 }
 
+# use gpt-4 to describe the haunting entity
 ghost_description <- function(id) {
   gpt_output <- create_chat_completion(
     model = "gpt-4",
@@ -100,6 +103,9 @@ ghost_description <- function(id) {
   gpt_output$choices$message.content
 }
 
+# use gpt to create a prompt to generate an image from the ghost description
+# this could be improved by training the LLM first with a set of midjourney
+# prompts
 ghost_image_prompt <- function(desc, location) {
   prompt <- list(
     list(
@@ -116,26 +122,57 @@ ghost_image_prompt <- function(desc, location) {
     messages = prompt
   )
   img_prompt <- str_replace_all(out$choices$message.content, "\\.", ",")
+  img_prompt <- paste0(img_prompt, ", dark, smokey, grainy")
   glue("{img_prompt} at the {location}")
 }
 
-run_gpt <- function(df, ids) {
+# run all the bits together and add to the sample data frame
+# if dalle == FALSE it will just produce the prompt for using
+# in midjourney
+run_gpt <- function(df, ids, dalle = FALSE) {
   n <- nrow(df)
   desc_summary <- rep(NA, n)
   ghost_summary <- rep(NA, n)
   image_prompt <- rep(NA, n)
+  img <- rep(NA, n)
   for(k in 1:n){
     id_k <- df$id[k]
     desc_summary[k] <- description_summary(id_k)
     ghost_summary[k] <- ghost_description(id_k)
-    image_prompt[k] <- ghost_image_prompt(ghost_summary[k], df$location[k])
+    image_prompt[k] <- ghost_image_prompt(ghost_summary[k], df$location[k]) |>
+      str_remove_all('"')
+    if(dalle) {
+      cat(glue("\n\n{id_k} Title: {places$location[id_k]} | Prompt: {image_prompt[k]}\n\n"))
+      image_prompt[k] <- str_remove_all(image_prompt[k], "decapitation|decapitated|noose")
+      img[k] <- glue("scripts/2023/week-41-haunted-places/DALL-E/{id_k}.png")
+
+      tryCatch(
+        {
+          img_k <- create_image(image_prompt[k])
+          image_read(img_k$data$url) |>
+            image_write(img[k])
+        },
+        error = function(e) print(glue("{k} / id {id_k} failed"))
+      )
+
+    }
   }
-  df |>
+  out <- df |>
     bind_cols(tibble(desc_summary = desc_summary)) |>
     bind_cols(tibble(ghost_summary = ghost_summary)) |>
     bind_cols(tibble(image_prompt = image_prompt))
+
+  if(dalle) {
+    out <- out |>
+      bind_cols(tibble(img = img))
+  }
+
+  out
 }
 
+# other helpers
+
+# split the title into words
 split_title <- function(x) {
   x_ls <- str_split(str_remove_all(x, "[:punct:]+"), "[:space:]+")
   map_dfr(1:length(x), ~{
@@ -146,18 +183,22 @@ split_title <- function(x) {
   })
 }
 
-sample_places <- function(df, n) {
-  set.seed(9369)
+# sample the places for the main image
+sample_places <- function(df, n, seed = 9369) {
+  set.seed(seed)
   df |>
     sample_n(n) |>
     ungroup()
 }
 
+# find the number of words in a string
 n_words <- function(x) {
   n_ls <- str_split(x, "[:space:]")
   map_dbl(n_ls, length)
 }
 
+# helper to quickly read the description summary and the image prompt
+# to see if it's ok or complete rubbish
 read_summary_and_prompt <- function(id) {
   cat("\n", df_base$desc_summary[id], "\n\n")
   cat(df_base$image_prompt[id], "\n\n")
@@ -165,6 +206,7 @@ read_summary_and_prompt <- function(id) {
 
 # 🤼 wrangle -----------------------------------------------------------------
 
+# get the location type
 df_type <- split_title(places$location) |>
   mutate(
     type = tolower(str_remove_all(type, '"')),
@@ -182,17 +224,21 @@ df_type <- split_title(places$location) |>
   slice_tail(n = 1) |>
   ungroup()
 
+# summarise the location type
 df_n_type <- df_type |>
   count(type) |>
   arrange(desc(n)) |>
   slice_head(n = 20)
 
+# summarise state
 df_state <- places |>
   count(code = state)
 
+# sample the top types
 places_to_sample <- df_n_type |>
   slice_head(n = 3)
 
+# create the sample data frame
 df_sample <- places |>
   left_join(
     df_type |>
@@ -210,11 +256,13 @@ df_sample <- places |>
 
 # call GPT
 df_base <- df_sample |>
-  run_gpt()
+  run_gpt(dalle = TRUE)
 
 # writing to store gpt output
-write_csv(df_base, file = "scripts/2023/week-41-haunted-places/sample.csv")
-df_base <- read_csv("scripts/2023/week-41-haunted-places/sample.csv")
+if(FALSE) {
+  write_csv(df_base, file = "scripts/2023/week-41-haunted-places/sample.csv")
+  df_base <- read_csv("scripts/2023/week-41-haunted-places/sample.csv")
+}
 
 # doing all the midjourney image creation
 # this could be done with DALL-E e.g. create_image(df_base$image_prompt[1])
@@ -238,24 +286,36 @@ df_images <- tribble(
   8724, "018.png",
   4914, "019.png",
   5842, "020.png"
-)
+) |>
+  mutate(img = paste0("scripts/2023/week-41-haunted-places/ghosts/", img))
 
+# if using DALL-E don't merge on df_images
+# a bit clunky
 df_final <- df_base |>
-  left_join(df_images, by = "id") |>
+  # left_join(df_images, by = "id") |>
   mutate(
     type = factor(type),
     x = as.numeric(type),
     desc_summary = str_remove(desc_summary, "The text describes |The text refers to "),
-    desc_summary = str_to_sentence(desc_summary),
-    img = paste0("scripts/2023/week-41-haunted-places/ghosts/", img)
+    desc_summary = str_to_sentence(desc_summary)
   ) |>
   group_by(type) |>
   mutate(
     y = 1:n()
   )
 
+# circle crop
 df_final <- df_final |>
   mutate(img_circle = circle_crop(img, border_size = 12, border_colour = accent))
+
+df_base$img <- glue("scripts/2023/week-41-haunted-places/DALL-E/{df_base$id}.png")
+for(k in 8:15) {
+  prmpt <- df_base$image_prompt[k]
+  prmpt <- str_remove_all(prmpt, "decapitation|decapitated|noose|headless")
+  x <- create_image(prmpt)
+  image_read(x$data$url) |>
+    image_write(df_base$img[k])
+}
 
 # 🔡 text --------------------------------------------------------------------
 
@@ -265,12 +325,6 @@ title <- "HAUNTED PLACES\nIN THE US"
 subtitle <- "The United States has 10,992 documented haunted places all across
 the country, patricularly in Schools, Cemeteries and Old Roads. Here are a selection
 of haunted places from the top 3 most common types of haunted places."
-
-df_titles <- tribble(
-  ~x, ~y, ~label,
-  -0.2, 5.45, title,
-  -0.2, 4.55, subtitle
-)
 
 # 📊 plot --------------------------------------------------------------------
 
@@ -336,4 +390,4 @@ g_base +
     )
   )
 
-ggsave("scripts/2023/week-41-haunted-places/haunted-places.png", height = 12, width = 24)
+ggsave("scripts/2023/week-41-haunted-places/haunted-places-dalle-og.png", height = 12, width = 24)
