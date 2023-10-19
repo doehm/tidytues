@@ -5,6 +5,11 @@ For reasons that I don’t fully understand I had to decommission my old
 repo. I will one day migrate it over here but in the meantime here is a
 link to my [Old TidyTuesday repo](https://github.com/doehm/tidyTuesday)
 
+## [Week 42: Taylor Swift](https://github.com/doehm/tidytues/blob/main/scripts/2023/week-42-taylor-swift/taylor-swift.R)
+
+<a href='https://github.com/doehm/tidytues/blob/main/scripts/2023/week-42-taylor-swift/taylor-swift.png'>
+<img src='scripts/2023/week-42-taylor-swift/taylor-swift-s.png'/></a>
+
 ## [Week 41: Haunted Places](https://github.com/doehm/tidytues/blob/main/scripts/2023/week-41-haunted-places/haunted-places.R)
 
 <a href='https://github.com/doehm/tidytues/blob/main/scripts/2023/week-41-haunted-places/haunted-places.png'>

@@ -60,7 +60,7 @@ make_tweet <- function(name, week) {
 #'
 #' @examples
 min_max <- function(x, a, b) {
-  (b - a) * (x - min(x)) / (max(x) - min(x)) + a
+  (b - a) * (x - min(x, na.rm = TRUE)) / (max(x, na.rm = TRUE) - min(x, na.rm = TRUE)) + a
 }
 
 
