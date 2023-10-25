@@ -17,6 +17,13 @@ library(geofacet)
 # you need to put your key in here
 Sys.setenv(OPENAI_API_KEY = "xxxx")
 
+msg <- list(
+  list(
+    "role" = "user",
+    "content" = "show me an image of a perfect monstera indoor plant"
+  )
+)
+
 # 💾 load data ---------------------------------------------------------------
 
 dat <- tidytuesdayR::tt_load(2023, week = 41)

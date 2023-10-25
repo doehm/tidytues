@@ -7,6 +7,11 @@ Click on header or the chart for the code.
 
 For reasons that I don't fully understand I had to decommission my old repo. I will one day migrate it over here but in the meantime here is a link to my [Old TidyTuesday repo](https://github.com/doehm/tidyTuesday)
 
+## [Week 43: Patient Risk Profiles](https://github.com/doehm/tidytues/blob/main/scripts/2023/week-43-patient-risk-profiles/patient-risk-profiles.R)
+
+<a href='https://github.com/doehm/tidytues/blob/main/scripts/2023/week-43-patient-risk-profiles/patient-risk-profiles.png'>
+  <img src='scripts/2023/week-43-patient-risk-profiles/patient-risk-profiles-s.png'/></a>
+
 ## [Week 42: Taylor Swift](https://github.com/doehm/tidytues/blob/main/scripts/2023/week-42-taylor-swift/taylor-swift.R)
 
 <a href='https://github.com/doehm/tidytues/blob/main/scripts/2023/week-42-taylor-swift/taylor-swift.png'>
