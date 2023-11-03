@@ -19,6 +19,7 @@ txt <- "grey20"
 bg <- "#d5bdaf"
 accent <- "grey20"
 
+
 font_add("fa-brands", regular = "../../Assets/Fonts/fontawesome/webfonts/fa-brands-400.ttf")
 font_add("fa-solid", regular = "../../Assets/Fonts/fontawesome/webfonts/fa-solid-900.ttf")
 font_add_google("Barlow", "bar")
@@ -109,7 +110,7 @@ df_base |>
     plot.title = element_text(size = 128, hjust = 0.5, margin = margin(b = 30), face = "bold"),
     plot.subtitle = element_text(),
     plot.caption = element_markdown(colour = txt, hjust = 0.5, margin = margin(t = 30)),
-    plot.margin = margin(b = 170, t = 200, r = 200, l = 250)
+    plot.margin = margin(b = 70, t = 100, r = 100, l = 150)
   )
 
 ggsave("scripts/2023/week-43-patient-risk-profiles/patient-risk-profiles.png", height = 12, width = 18)
