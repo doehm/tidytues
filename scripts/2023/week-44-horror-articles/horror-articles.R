@@ -49,7 +49,7 @@ for(k in 1:nrow(horror)) {
   )$choices$message.content
 }
 
-write_rds(three_words, "three-words.rds")
+write_rds(three_words, "scripts/2023/week-44-horror-articles/three-words.rds")
 
 df_words_0 <- map_dfr(1:length(three_words), ~{
   words <- str_remove_all(three_words[.x], "\\.") |>
