@@ -16,9 +16,9 @@ df <- dat$patient_risk_profiles |>
 # ✍️ fonts and palettes ------------------------------------------------------
 
 txt <- "grey20"
-bg <- "#d5bdaf"
+bg <- "white"
 accent <- "grey20"
-
+pal <- c("bg", "black")
 
 font_add("fa-brands", regular = "../../Assets/Fonts/fontawesome/webfonts/fa-brands-400.ttf")
 font_add("fa-solid", regular = "../../Assets/Fonts/fontawesome/webfonts/fa-solid-900.ttf")
@@ -68,7 +68,8 @@ df_base <- df |>
   ungroup() |>
   mutate(
     x = as.numeric(age_group),
-    y = -as.numeric(risk)
+    y = -as.numeric(risk),
+    val = min_max(mean, 1, 24)
     )
 
 df_seg <- df_base |>
@@ -93,15 +94,16 @@ xlabs <- tribble(
 
 df_base |>
   ggplot() +
-  geom_ribbon(aes(x = x, ymin = y-3*mean, ymax = y+3*mean, group = risk), colour = accent, linewidth = 0.5) +
   geom_text(aes(0, y, label = risk), family = ft, size = 16, colour = txt, hjust = 1, vjust = 1, fontface = "italic", nudge_y = 0.25) +
   geom_segment(aes(x = 1, xend = 19, y = 0, yend = 0), colour = txt, linewidth = 0.1) +
   geom_richtext(aes(x, y, label = lab), xlabs, family = ft, size = 12, colour = txt, fontface = "italic", label.colour = NA, fill = bg) +
+  geom_point(aes(x, y, size = val, alpha = val), pch = 15) +
+  scale_size_identity() +
   coord_fixed(clip = "off") +
   labs(
     caption = caption,
     fill = "Patient risk",
-    title = "Pateint Risk Profiles"
+    title = "Patient Risk Profiles"
     ) +
   theme_void() +
   theme(
@@ -110,7 +112,8 @@ df_base |>
     plot.title = element_text(size = 128, hjust = 0.5, margin = margin(b = 30), face = "bold"),
     plot.subtitle = element_text(),
     plot.caption = element_markdown(colour = txt, hjust = 0.5, margin = margin(t = 30)),
-    plot.margin = margin(b = 70, t = 100, r = 100, l = 150)
+    plot.margin = margin(b = 70, t = 100, r = 100, l = 150),
+    legend.position = "none"
   )
 
 ggsave("scripts/2023/week-43-patient-risk-profiles/patient-risk-profiles.png", height = 12, width = 18)
