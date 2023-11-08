@@ -5,6 +5,11 @@ For reasons that I don’t fully understand I had to decommission my old
 repo. I will one day migrate it over here but in the meantime here is a
 link to my [Old TidyTuesday repo](https://github.com/doehm/tidyTuesday)
 
+## [Week 45: US House Election Results](https://github.com/doehm/tidytues/blob/main/scripts/2023/week-45-house/house.R)
+
+<a href='https://github.com/doehm/tidytues/blob/main/scripts/2023/week-45-house/house.png'>
+<img src='scripts/2023/week-45-house/house-s.png'/></a>
+
 ## [Week 44: Horror Articles](https://github.com/doehm/tidytues/blob/main/scripts/2023/week-44-horror-articles/horror-articles.R)
 
 <a href='https://github.com/doehm/tidytues/blob/main/scripts/2023/week-44-horror-articles/horror-articles.png'>
