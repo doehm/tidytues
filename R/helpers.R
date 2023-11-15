@@ -221,3 +221,23 @@ to_hm <- function(seconds, fmt = "hm") {
   secs <- str_pad(secs, width = 2, pad = 0)
   ifelse(hrs == 0, paste0(mins, "m"), paste0(hrs, "h ", mins, "m"))
 }
+
+#' Title
+#'
+#' @param ss GS4 id
+#' @param sheet Sheet name
+#'
+#' @return
+#' @export
+read_shapes <- function(ss, sheet) {
+  read_sheet(ss = ss, sheet = sheet) |>
+    mutate(y = 1:n()) |>
+    pivot_longer(starts_with("x"), names_to = "x", values_to = "pos") |>
+    filter(pos > 0) |>
+    mutate(x = as.numeric(str_remove(x, "x"))) |>
+    arrange(pos) |>
+    mutate(
+      x = min_max(x, 0, 1),
+      y = min_max(-y, 0, 1)
+    )
+}
