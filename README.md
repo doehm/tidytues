@@ -5,6 +5,11 @@ For reasons that I don’t fully understand I had to decommission my old
 repo. I will one day migrate it over here but in the meantime here is a
 link to my [Old TidyTuesday repo](https://github.com/doehm/tidyTuesday)
 
+## [Week 47: Rladies](https://github.com/doehm/tidytues/blob/main/scripts/2023/week-47-rladies/rladies.R)
+
+<a href='https://github.com/doehm/tidytues/blob/main/scripts/2023/week-47-rladies/rladies.png'>
+<img src='scripts/2023/week-47-rladies/rladies-s.png'/></a>
+
 ## [Week 46: Diwali](https://github.com/doehm/tidytues/blob/main/scripts/2023/week-46-diwali/diwali.R)
 
 <a href='https://github.com/doehm/tidytues/blob/main/scripts/2023/week-46-diwali/diwali.png'>
