@@ -109,12 +109,14 @@ to_pct <- function(x, digit) {
 #' @export
 make_image_small <- function(week, year = 2023) {
   dir <- list.files("scripts/2023", pattern = as.character(week), full.names = TRUE)
-  lab <- str_extract(dir, "(?<=[:digit:]{1,2}-).+")
-  img <- paste0(dir, "/", lab, ".png")
-  new_file <- paste0(dir, "/", lab, "-s.png")
-  image_read(img) |>
-    image_resize("x1080") |>
-    image_write(new_file)
+  files <- list.files(dir, pattern = ".png", full.names = TRUE)
+  files <- files[!str_detect(files, "-s.png")]
+  new_file <- str_replace(files, ".png", "-s.png")
+  walk2(files, new_file, ~{
+    image_read(.x) |>
+      image_resize("x1080") |>
+      image_write(.y)
+  })
 }
 
 

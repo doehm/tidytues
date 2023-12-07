@@ -5,6 +5,13 @@ For reasons that I don’t fully understand I had to decommission my old
 repo. I will one day migrate it over here but in the meantime here is a
 link to my [Old TidyTuesday repo](https://github.com/doehm/tidyTuesday)
 
+## [Week 49: Life Expectancy](https://github.com/doehm/tidytues/blob/main/scripts/2023/week-49-life-expectancy/life-expectancy.R)
+
+<a href='https://github.com/doehm/tidytues/blob/main/scripts/2023/week-49-life-expectancy/life-expectancy.png'>
+<img src='scripts/2023/week-49-life-expectancy/life-expectancy-s.png'/></a>
+<a href='https://github.com/doehm/tidytues/blob/main/scripts/2023/week-49-life-expectancy/life-expectancy.png'>
+<img src='scripts/2023/week-49-life-expectancy/life-expectancy-aus-s.png'/></a>
+
 ## [Week 48: Dr Who](https://github.com/doehm/tidytues/blob/main/scripts/2023/week-48-dr-who/dr-who.R)
 
 <a href='https://github.com/doehm/tidytues/blob/main/scripts/2023/week-48-dr-who/dr-who.png'>
