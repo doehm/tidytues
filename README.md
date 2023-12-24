@@ -5,6 +5,11 @@ For reasons that I don’t fully understand I had to decommission my old
 repo. I will one day migrate it over here but in the meantime here is a
 link to my [Old TidyTuesday repo](https://github.com/doehm/tidyTuesday)
 
+## [Week 51: Holiday Episodes](https://github.com/doehm/tidytues/blob/main/scripts/2023/week-51-holiday-episodes/holiday-episodes.R)
+
+<a href='https://github.com/doehm/tidytues/blob/main/scripts/2023/week-51-holiday-episodes/holiday-episodes.png'>
+<img src='scripts/2023/week-51-holiday-episodes/holiday-episodes-s.png'/></a>
+
 ## [Week 50: Christmas Movies](https://github.com/doehm/tidytues/blob/main/scripts/2023/week-50-christmas-movies/christmas-movies.R)
 
 <a href='https://github.com/doehm/tidytues/blob/main/scripts/2023/week-50-christmas-movies/christmas-movies.png'>
