@@ -216,48 +216,48 @@ Sorry. Somehow my script was deleted and is lost forever. I blame my 2 year old.
 
 <a href='https://github.com/doehm/tidytues/blob/main/scripts/2023/week-10-numbats/numbats.R'><img src='scripts/2023/week-10-numbats/numbats.png'/></a>
 
-## [Week 9: African sentiment analysis](https://github.com/doehm/tidytues/blob/main/scripts/2023/week-9-afrisenti/afrisenti.R)
+## [Week 9: African sentiment analysis](https://github.com/doehm/tidytues/blob/main/scripts/2023/week-09-afrisenti/afrisenti.R)
 
-<a href='https://github.com/doehm/tidytues/blob/main/scripts/2023/week-9-afrisenti/afrisenti.R'><img src='scripts/2023/week-9-afrisenti/afrisenti.png'/></a>
+<a href='https://github.com/doehm/tidytues/blob/main/scripts/2023/week-09-afrisenti/afrisenti.R'><img src='scripts/2023/week-09-afrisenti/afrisenti.png'/></a>
 
-## [Week 8: Bob Ross Paintings](https://github.com/doehm/tidytues/blob/main/scripts/2023/week-8-bob-ross/bob-ross.R)
+## [Week 8: Bob Ross Paintings](https://github.com/doehm/tidytues/blob/main/scripts/2023/week-08-bob-ross/bob-ross.R)
 
-<a href='https://github.com/doehm/tidytues/blob/main/scripts/2023/week-8-bob-ross/bob-ross.R'><img src='scripts/2023/week-8-bob-ross/bob-ross.png'/></a>
+<a href='https://github.com/doehm/tidytues/blob/main/scripts/2023/week-08-bob-ross/bob-ross.R'><img src='scripts/2023/week-08-bob-ross/bob-ross.png'/></a>
 
-## [Week 7: Hollywood Relationships](https://github.com/doehm/tidytues/blob/main/scripts/2023/week-7-hollywood/hollywood.R)
+## [Week 7: Hollywood Relationships](https://github.com/doehm/tidytues/blob/main/scripts/2023/week-07-hollywood/hollywood.R)
 
-<a href='https://github.com/doehm/tidytues/blob/main/scripts/2023/week-7-hollywood/hollywood.R'><img src='scripts/2023/week-7-hollywood/hollywood.png'/></a>
+<a href='https://github.com/doehm/tidytues/blob/main/scripts/2023/week-07-hollywood/hollywood.R'><img src='scripts/2023/week-07-hollywood/hollywood.png'/></a>
 
-## [Week 6: Tech](https://github.com/doehm/tidytues/blob/main/scripts/2023/week-6-tech/tech.R)
+## [Week 6: Tech](https://github.com/doehm/tidytues/blob/main/scripts/2023/week-06-tech/tech.R)
 
-<a href='https://github.com/doehm/tidytues/blob/main/scripts/2023/week-6-tech/tech.R'><img src='scripts/2023/week-6-tech/tech.png'/></a>
+<a href='https://github.com/doehm/tidytues/blob/main/scripts/2023/week-06-tech/tech.R'><img src='scripts/2023/week-06-tech/tech.png'/></a>
 
-## [Week 5: Cats](https://github.com/doehm/tidytues/blob/main/scripts/2023/week-5-cats/cats.R)
+## [Week 5: Cats](https://github.com/doehm/tidytues/blob/main/scripts/2023/week-05-cats/cats.R)
 
-<a href='https://github.com/doehm/tidytues/blob/main/scripts/2023/week-5-cats/cats.R'><img src='scripts/2023/week-5-cats/cats.png'/></a>
+<a href='https://github.com/doehm/tidytues/blob/main/scripts/2023/week-05-cats/cats.R'><img src='scripts/2023/week-05-cats/cats.png'/></a>
 
-## [Week 4: Alone](https://github.com/doehm/tidytues/blob/main/scripts/2023/week-4-alone/alone.R)
+## [Week 4: Alone](https://github.com/doehm/tidytues/blob/main/scripts/2023/week-04-alone/alone.R)
 
-<a href='https://github.com/doehm/tidytues/blob/main/scripts/2023/week-4-alone/alone.R'><img src='scripts/2023/week-4-alone/alone.png'/></a>
+<a href='https://github.com/doehm/tidytues/blob/main/scripts/2023/week-04-alone/alone.R'><img src='scripts/2023/week-04-alone/alone.png'/></a>
 
-## [Week 3: Art history](https://github.com/doehm/tidytues/blob/main/scripts/2023/week-3-artists/artists.R)
+## [Week 3: Art history](https://github.com/doehm/tidytues/blob/main/scripts/2023/week-03-artists/artists.R)
 
-<a href='https://github.com/doehm/tidytues/blob/main/scripts/2023/week-3-artists/artists.R'><img src='scripts/2023/week-3-artists/artists.png'/></a>
+<a href='https://github.com/doehm/tidytues/blob/main/scripts/2023/week-03-artists/artists.R'><img src='scripts/2023/week-03-artists/artists.png'/></a>
 
-## [Week 2: Project FeederWatch](https://github.com/doehm/tidytues/blob/main/scripts/2023/week-2-birds/birds.R)
+## [Week 2: Project FeederWatch](https://github.com/doehm/tidytues/blob/main/scripts/2023/week-02-birds/birds.R)
 
-<a href='https://github.com/doehm/tidytues/blob/main/scripts/2023/week-2-birds/birds.R'><img src='scripts/2023/week-2-birds/birds.png' /></a>
+<a href='https://github.com/doehm/tidytues/blob/main/scripts/2023/week-02-birds/birds.R'><img src='scripts/2023/week-02-birds/birds.png' /></a>
 
-## [Week 1: BYOD](https://github.com/doehm/tidytues/blob/main/scripts/2023/week-1-BYOD/mischa.R)
+## [Week 1: BYOD](https://github.com/doehm/tidytues/blob/main/scripts/2023/week-01-BYOD/mischa.R)
 
 <div id = "cover">
-  <img src='scripts/2023/week-1-BYOD/not voted out.png'>
-  <img src='scripts/2023/week-1-BYOD/not voted out med evac.png'>
-  <img src='scripts/2023/week-1-BYOD/not voted out quit.png'>
-  <img src='scripts/2023/week-1-BYOD/not voted out eliminated.png'>
+  <img src='scripts/2023/week-01-BYOD/not voted out.png'>
+  <img src='scripts/2023/week-01-BYOD/not voted out med evac.png'>
+  <img src='scripts/2023/week-01-BYOD/not voted out quit.png'>
+  <img src='scripts/2023/week-01-BYOD/not voted out eliminated.png'>
 </div>
 
-<a href='https://github.com/doehm/tidytues/blob/main/scripts/2023/week-1-BYOD/mischa.R'><img src='scripts/2023/week-1-BYOD/mischa.png'/></a>
+<a href='https://github.com/doehm/tidytues/blob/main/scripts/2023/week-01-BYOD/mischa.R'><img src='scripts/2023/week-01-BYOD/mischa.png'/></a>
 
 # 2022
 
