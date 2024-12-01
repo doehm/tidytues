@@ -81,10 +81,14 @@ make_caption <- function(accent, data) {
   twitter <- glue("<span style='font-family:fa-brands; color:{accent[2]}'>&#xf099;</span>")
   threads <- glue("<span style='font-family:fa-brands; color:{accent[3]}'>&#xe618;</span>")
   mastodon <- glue("<span style='font-family:fa-brands; color:{accent[4]}'>&#xf4f6;</span>")
+  bluesky <- glue("<span style='font-family:fa-brands; color:{accent[4]}'>&#xe671;</span>")
   floppy <- glue("<span style='font-family:fa-solid; color:{accent}'>&#xf0c7;</span>")
   space <- glue("<span style='color:{bg};font-size:1px'>'</span>")
   space2 <- glue("<span style='color:{bg}'>-</span>") # can't believe I'm doing this
-  glue("{github}{space2}doehm/tidytues{space2}{twitter}{space2}@danoehm{space2}{threads}{space2}@danoehm{space2}{mastodon}{space2}@danoehm@{space}fosstodon.org")
+  glue("
+       {github} doehm/tidytues
+       {bluesky} @danoehm.bsky.social
+       ")
 }
 
 #' To percent

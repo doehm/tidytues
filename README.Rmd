@@ -7,6 +7,15 @@ Click on header or the chart for the code.
 
 For reasons that I don't fully understand I had to decommission my old repo. I will one day migrate it over here but in the meantime here is a link to my [Old TidyTuesday repo](https://github.com/doehm/tidyTuesday)
 
+# 2024
+
+## [Week 48: ](https://github.com/doehm/tidytues/blob/main/scripts/2024/week-48-border-control/border-control.R)
+
+<a href='https://github.com/doehm/tidytues/blob/main/scripts/2024/week-48-border-control/border-control-final.png'>
+  <img src='scripts/2024/week-48-border-control/border-control-final.png'/></a>
+
+# 2023
+
 ## [Week 52: R Package Structure](https://github.com/doehm/tidytues/blob/main/scripts/2023/week-52-cran/cran.R)
 
 <a href='https://github.com/doehm/tidytues/blob/main/scripts/2023/week-52-cran/cran.png'>
