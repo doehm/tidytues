@@ -1,11 +1,12 @@
 
 Click on header or the chart for the code.
 
-For reasons that I don’t fully understand I had to decommission my old
-repo. I will one day migrate it over here but in the meantime here is a
-link to my [Old TidyTuesday repo](https://github.com/doehm/tidyTuesday)
-
 # 2024
+
+## [Week 49: Traffic](https://github.com/doehm/tidytues/blob/main/scripts/2024/week-49-traffic/traffic.R)
+
+<a href='https://github.com/doehm/tidytues/blob/main/scripts/2024/week-49-traffic/traffic-final.png'>
+<img src='scripts/2024/week-49-traffic/traffic-final.png'/></a>
 
 ## [Week 48:](https://github.com/doehm/tidytues/blob/main/scripts/2024/week-48-border-control/border-control.R)
 
@@ -295,6 +296,10 @@ year old.
 <a href='https://github.com/doehm/tidytues/blob/main/scripts/2022/week-48-FIFA-world-cup/FIFA-world-cup.R'>
 <img src='scripts/2022/week-48-FIFA-world-cup/FIFA-world-cup.png' />
 </a>
+
+For reasons that I don’t fully understand I had to decommission my old
+repo. I will one day migrate it over here but in the meantime here is a
+link to my [Old TidyTuesday repo](https://github.com/doehm/tidyTuesday)
 
 <style type="text/css">
 #cover {

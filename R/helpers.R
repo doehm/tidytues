@@ -14,7 +14,7 @@ readme_text <- function(week, year = 2023) {
   make_image_small(week)
 
   # make readme text
-  dir <- list.files("scripts/2023", pattern = as.character(week), full.names = TRUE)
+  dir <- list.files(glue("scripts/{year}"), pattern = as.character(week), full.names = TRUE)
   lab <- str_extract(dir, "(?<=[:digit:]{1,2}-).+")
   title <- str_to_title(lab) |>
     str_replace_all("-", " ")
