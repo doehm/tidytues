@@ -9,8 +9,8 @@ Click on header or the chart for the code.
 
 ## [Week 3: Himalayan Expeditions](https://github.com/doehm/tidytues/blob/main/scripts/2025/03 - himalaya/himalaya.R)
 
-<a href='https://github.com/doehm/tidytues/blob/main/scripts/2025/03 - himalaya/himalaya.png'>
-  <img src='scripts/2025/03 - himalaya/himalaya-s.png'/></a>
+<a href='https://github.com/doehm/tidytues/blob/main/scripts/2025/03 - himalaya/himalaya final.png'>
+  <img src='scripts/2025/03 - himalaya/himalaya final-s.png'/></a>
 
 # 2024
 
