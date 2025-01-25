@@ -11,6 +11,16 @@ Click on header or the chart for the code.
 
 <a href='https://github.com/doehm/tidytues/blob/main/scripts/2025/03 - himalaya/himalaya final.png'>
   <img src='scripts/2025/03 - himalaya/himalaya final-s.png'/></a>
+  
+## [Week 2: posit::conf()](https://github.com/doehm/tidytues/blob/main/scripts/2025/02 - post-conf/posit-conf.R)
+
+<a href='https://github.com/doehm/tidytues/blob/main/scripts/2025/02 - posit-conf/posit-conf.png'>
+  <img src='scripts/2025/02 - posit-conf/posit-conf-s.png'/></a>
+  
+## Week 1: BYOD
+
+<a href='https://github.com/doehm/tidytues/blob/main/scripts/2025/01 - predator/predator.png'>
+  <img src='scripts/2025/01 - predator/predator-s.png'/></a>
 
 # 2024
 

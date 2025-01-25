@@ -116,7 +116,7 @@ to_pct <- function(x, digit) {
 make_image_small <- function(week, year = 2025) {
   week <- str_pad(week, width = 2, pad = "0")
   dir <- list.files("scripts/2025/", pattern = as.character(week), full.names = TRUE)
-  files <- list.files(dir, pattern = "final", full.names = TRUE)
+  files <- list.files(dir, pattern = ".png", full.names = TRUE)
   files <- files[!str_detect(files, "-s.png")]
   new_file <- str_replace(files, ".png", "-s.png")
   walk2(files, new_file, ~{
