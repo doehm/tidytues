@@ -71,23 +71,25 @@ min_max <- function(x, a, b) {
 #'
 #' @return
 #' @export
-make_caption <- function(accent, data) {
+make_caption <- function(accent, bg, data) {
 
   if(length(accent) != 4) {
     accent <- rep(accent[1], 4)
   }
 
-  github <- glue("<span style='font-family:fa-brands; color:{accent[1]}'>&#xf09b;</span>")
-  twitter <- glue("<span style='font-family:fa-brands; color:{accent[2]}'>&#xf099;</span>")
-  threads <- glue("<span style='font-family:fa-brands; color:{accent[3]}'>&#xe618;</span>")
-  mastodon <- glue("<span style='font-family:fa-brands; color:{accent[4]}'>&#xf4f6;</span>")
-  bluesky <- glue("<span style='font-family:fa-brands; color:{accent[4]}'>&#xe671;</span>")
+  github <- glue("<span style='font-family:fa-brands; color:{accent}'>&#xf09b;</span>")
+  twitter <- glue("<span style='font-family:fa-brands; color:{accent}'>&#xf099;</span>")
+  threads <- glue("<span style='font-family:fa-brands; color:{accent}'>&#xe618;</span>")
+  mastodon <- glue("<span style='font-family:fa-brands; color:{accent}'>&#xf4f6;</span>")
+  bluesky <- glue("<span style='font-family:fa-brands; color:{accent}'>&#xe671;</span>")
+  linkedin <- glue("<span style='font-family:fa-brands; color:{accent}'>&#xf08c;</span>")
   floppy <- glue("<span style='font-family:fa-solid; color:{accent}'>&#xf0c7;</span>")
   space <- glue("<span style='color:{bg};font-size:1px'>'</span>")
   space2 <- glue("<span style='color:{bg}'>-</span>") # can't believe I'm doing this
   glue("
-       {github} doehm/tidytues
-       {bluesky} @danoehm.bsky.social
+       {github} {space2} doehm/tidytues {space2}
+       {bluesky} {space2} @danoehm.bsky.social {space2}
+       {linkedin} {space2} Dan Oehm
        ")
 }
 
@@ -111,9 +113,10 @@ to_pct <- function(x, digit) {
 #'
 #' @return
 #' @export
-make_image_small <- function(week, year = 2023) {
-  dir <- list.files("scripts/2023", pattern = as.character(week), full.names = TRUE)
-  files <- list.files(dir, pattern = ".png", full.names = TRUE)
+make_image_small <- function(week, year = 2025) {
+  week <- str_pad(week, width = 2, pad = "0")
+  dir <- list.files("scripts/2025/", pattern = as.character(week), full.names = TRUE)
+  files <- list.files(dir, pattern = "final", full.names = TRUE)
   files <- files[!str_detect(files, "-s.png")]
   new_file <- str_replace(files, ".png", "-s.png")
   walk2(files, new_file, ~{

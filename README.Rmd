@@ -5,14 +5,26 @@ output:
 
 Click on header or the chart for the code.
 
+# 2025
+
+## [Week 3: Himalayan Expeditions](https://github.com/doehm/tidytues/blob/main/scripts/2025/03 - himalaya/himalaya.R)
+
+<a href='https://github.com/doehm/tidytues/blob/main/scripts/2025/03 - himalaya/himalaya.png'>
+  <img src='scripts/2025/03 - himalaya/himalaya-s.png'/></a>
+
 # 2024
 
-## [Week 49: Traffic](https://github.com/doehm/tidytues/blob/main/scripts/2024/week-49-traffic/traffic.R)
+## [Week 50: The Scent of Data](https://github.com/doehm/tidytues/blob/main/scripts/2024/week-50-perfume/perfume.R)
+
+<a href='https://github.com/doehm/tidytues/blob/main/scripts/2024/week-50-perfume/perfume-final.png'>
+  <img src='scripts/2024/week-50-perfume/perfume-final.png'/></a>
+
+## [Week 49: National Highways Traffic Flow](https://github.com/doehm/tidytues/blob/main/scripts/2024/week-49-traffic/traffic.R)
 
 <a href='https://github.com/doehm/tidytues/blob/main/scripts/2024/week-49-traffic/traffic-final.png'>
   <img src='scripts/2024/week-49-traffic/traffic-final.png'/></a>
 
-## [Week 48: ](https://github.com/doehm/tidytues/blob/main/scripts/2024/week-48-border-control/border-control.R)
+## [Week 48: Customs and Border Control](https://github.com/doehm/tidytues/blob/main/scripts/2024/week-48-border-control/border-control.R)
 
 <a href='https://github.com/doehm/tidytues/blob/main/scripts/2024/week-48-border-control/border-control-final.png'>
   <img src='scripts/2024/week-48-border-control/border-control-final.png'/></a>
