@@ -19,8 +19,8 @@ Click on header or the chart for the code.
   
 ## Week 1: BYOD
 
-<a href='https://github.com/doehm/tidytues/blob/main/scripts/2025/01 - predator/predator.png'>
-  <img src='scripts/2025/01 - predator/predator-s.png'/></a>
+<a href='https://github.com/doehm/tidytues/blob/main/scripts/2025/01 - BYOD/predator.jog'>
+  <img src='scripts/2025/01 - BYOD/predator-s.jpg'/></a>
 
 # 2024
 
