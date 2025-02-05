@@ -3,6 +3,16 @@ Click on header or the chart for the code.
 
 # 2025
 
+## [Week 5: The Simpsons](https://github.com/doehm/tidytues/blob/main/scripts/2025/03%20-%20simpsons/simpsons.R)
+
+<a href='https://github.com/doehm/tidytues/blob/main/scripts/2025/03 - simpsons/simpsons.png'>
+<img src='scripts/2025/05 - simpsons/simpsons-s.png'/></a>
+
+## [Week 4: Water Security](https://github.com/doehm/tidytues/blob/main/scripts/2025/04%20-%20water%20security/water%20security.R)
+
+<a href='https://github.com/doehm/tidytues/blob/main/scripts/2025/04 - water security/water security.png'>
+<img src='scripts/2025/04 - water security/water security-s.png'/></a>
+
 ## [Week 3: Himalayan Expeditions](https://github.com/doehm/tidytues/blob/main/scripts/2025/03%20-%20himalaya/himalaya.R)
 
 <a href='https://github.com/doehm/tidytues/blob/main/scripts/2025/03 - himalaya/himalaya final.png'>
