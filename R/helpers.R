@@ -90,9 +90,9 @@ make_caption <- function(accent, bg, data) {
   space2 <- glue("<span style='color:{bg}'>-</span>") # can't believe I'm doing this
 
   glue("
-       {github} {space2} doehm/tidytues {space2}
-       {bluesky} {space2} @danoehm.bsky.social {space2}
-       {linkedin} {space2} Dan Oehm
+       {github} doehm/tidytues {space2}
+       {bluesky} @danoehm.bsky.social {space2}
+       {linkedin} Dan Oehm
        ")
 }
 

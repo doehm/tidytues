@@ -67,8 +67,8 @@ caption <- make_caption(c(txt, sunset[c(2, 5)]), bg)
 scale_x <- seq(0, 25000, 2500)
 subtitle <- "Water insecurity can be influenced by number of social vulnerability
 indicators from demographic characteristics to living conditions and socioeconomic
-status that vary spatially across the U.S. Pumbing facilities are improving in 22
-states and it is getting worse in 28 states."
+status that vary spatially across the US. Plumbing facilities are improving in 22
+states and it is getting worse in 28."
 title <- "US Water Insecurity"
 
 df_text <- tibble(
