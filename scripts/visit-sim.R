@@ -72,7 +72,7 @@ visit_sim <- function(N, lambda, trip_duration, duration_mu, entered_boundary_at
   # calculate the time they left the boundary
   .left_boundary_at <- .entered_boundary_at + .duration
 
-  df <- map_dfr(1:N, ~{
+  map_dfr(1:N, ~{
 
     cat(.x, "\r")
 
@@ -101,7 +101,10 @@ visit_sim <- function(N, lambda, trip_duration, duration_mu, entered_boundary_at
       j <- which(interval == k-1)
       if(length(j) > 0) {
         recorded_in_boundary[k] <- in_boundary[which(interval == k-1)[1]]
-        if(is.na(recorded_in_boundary[k])) recorded_in_boundary[k] <- TRUE
+      } else {
+        if(k > 1) {
+          recorded_in_boundary[k] <- recorded_in_boundary[k-1]
+        }
       }
     }
 
