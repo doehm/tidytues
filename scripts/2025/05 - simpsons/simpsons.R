@@ -63,7 +63,7 @@ df <- simpsons_script_lines |>
 
 caption <- make_caption(simpsons[4], simpsons[3])
 title <- "THE SIMPSONS"
-subtitle <- glue("The top {.n} most spoken phrases in the top {.n} most referrenced locations")
+subtitle <- glue("The top {.n} most spoken phrases in the most referrenced locations")
 
 # 📊 plot --------------------------------------------------------------------
 

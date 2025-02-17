@@ -3,9 +3,14 @@ Click on header or the chart for the code.
 
 # 2025
 
-## [Week 5: The Simpsons](https://github.com/doehm/tidytues/blob/main/scripts/2025/03%20-%20simpsons/simpsons.R)
+## [Week 6: Saved CDC datasets](https://github.com/doehm/tidytues/blob/main/scripts/2025/06%20-%20cdc-datasets/cdc-datasets)
 
-<a href='https://github.com/doehm/tidytues/blob/main/scripts/2025/03 - simpsons/simpsons.png'>
+<a href='https://github.com/doehm/tidytues/blob/main/scripts/2025/06 - cdc-datasets/cdc-datasets'>
+<img src='scripts/2025/06 - cdc-datasets/cdc-datasets-s.png'/></a>
+
+## [Week 5: The Simpsons](https://github.com/doehm/tidytues/blob/main/scripts/2025/05%20-%20simpsons/simpsons.R)
+
+<a href='https://github.com/doehm/tidytues/blob/main/scripts/2025/05 - simpsons/simpsons.png'>
 <img src='scripts/2025/05 - simpsons/simpsons-s.png'/></a>
 
 ## [Week 4: Water Security](https://github.com/doehm/tidytues/blob/main/scripts/2025/04%20-%20water%20security/water%20security.R)
