@@ -3,7 +3,12 @@ Click on header or the chart for the code.
 
 # 2025
 
-## [Week 6: Saved CDC datasets](https://github.com/doehm/tidytues/blob/main/scripts/2025/06%20-%20cdc-datasets/cdc-datasets)
+## [Week 7: Agencies on the FBIs National Incident-Based Reporting System](https://github.com/doehm/tidytues/blob/main/scripts/2025/07%20-%20agencies/agencies.R)
+
+<a href='https://github.com/doehm/tidytues/blob/main/scripts/2025/07 - agencies/agencies'>
+<img src='scripts/2025/07 - agencies/agencies-s.png'/></a>
+
+## [Week 6: Saved CDC datasets](https://github.com/doehm/tidytues/blob/main/scripts/2025/06%20-%20cdc-datasets/cdc-datasets.R)
 
 <a href='https://github.com/doehm/tidytues/blob/main/scripts/2025/06 - cdc-datasets/cdc-datasets'>
 <img src='scripts/2025/06 - cdc-datasets/cdc-datasets-s.png'/></a>

@@ -86,13 +86,13 @@ make_caption <- function(accent, bg, data) {
   mastodon <- glue("<span style='font-family:fa-brands; color:{accent}'>&#xf4f6;</span>")
   floppy <- glue("<span style='font-family:fa-solid; color:{accent}'>&#xf0c7;</span>")
 
-  space <- glue("<span style='color:{bg};font-size:1px'>'</span>")
+  space <- glue("<span style='color:{bg};font-size:1px'>''</span>")
   space2 <- glue("<span style='color:{bg}'>-</span>") # can't believe I'm doing this
 
   glue("
-       {github} doehm/tidytues {space2}
-       {bluesky} @danoehm.bsky.social {space2}
-       {linkedin} Dan Oehm
+       {github} {space} doehm/tidytues {space2}
+       {bluesky} {space} @danoehm.bsky.social {space2}
+       {linkedin} {space} Dan Oehm
        ")
 }
 
