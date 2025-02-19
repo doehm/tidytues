@@ -9,12 +9,12 @@ Click on header or the chart for the code.
 
 ## [Week 7: Agencies on the FBIs National Incident-Based Reporting System](https://github.com/doehm/tidytues/blob/main/scripts/2025/07 - agencies/agencies.R)
 
-<a href='https://github.com/doehm/tidytues/blob/main/scripts/2025/07 - agencies/agencies'>
+<a href='https://github.com/doehm/tidytues/blob/main/scripts/2025/07 - agencies/agencies.png'>
   <img src='scripts/2025/07 - agencies/agencies-s.png'/></a>
 
 ## [Week 6: Saved CDC datasets](https://github.com/doehm/tidytues/blob/main/scripts/2025/06 - cdc-datasets/cdc-datasets.R)
 
-<a href='https://github.com/doehm/tidytues/blob/main/scripts/2025/06 - cdc-datasets/cdc-datasets'>
+<a href='https://github.com/doehm/tidytues/blob/main/scripts/2025/06 - cdc-datasets/cdc-datasets.png'>
   <img src='scripts/2025/06 - cdc-datasets/cdc-datasets-s.png'/></a>
 
 ## [Week 5: The Simpsons](https://github.com/doehm/tidytues/blob/main/scripts/2025/05 - simpsons/simpsons.R)

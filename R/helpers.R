@@ -8,29 +8,24 @@
 #' @export
 #'
 #' @examples
-readme_text <- function(week, year = 2023) {
+make_readme_text <- function(week, title, year = 2025) {
 
   # make image small
   make_image_small(week)
 
   # make readme text
-  dir <- list.files(glue("scripts/{year}"), pattern = as.character(week), full.names = TRUE)
-  lab <- str_extract(dir, "(?<=[:digit:]{1,2}-).+")
-  title <- str_to_title(lab) |>
-    str_replace_all("-", " ")
+  week <- str_pad(week, width = 2, pad = 0)
+  dir <- list.files(glue("scripts/{year}"), pattern = week, full.names = TRUE)
 
-  # print tweet
-  cat(
-    glue("#TidyTuesday week {week}: {title}
-    🔗 http://github.com/doehm/tidytues
-    #Rstats #dataviz #r4ds #ggplot2\n\n\n")
-  )
+  r_file <- list.files(dir, pattern = ".R")
+  png_file <- str_replace(r_file, ".R", ".png")
+  pngs_file <- str_replace(r_file, ".R", "-s.png")
 
   # print readme text
-  glue("## [Week {week}: {title}](https://github.com/doehm/tidytues/blob/main/scripts/{year}/week-{week}-{lab}/{lab}.R)
+  glue("## [Week {week}: {title}](https://github.com/doehm/tidytues/blob/main/{dir}/{r_file})
 
-  <a href='https://github.com/doehm/tidytues/blob/main/scripts/{year}/week-{week}-{lab}/{lab}.png'>
-    <img src='scripts/{year}/week-{week}-{lab}/{lab}-s.png'/></a>")
+  <a href='https://github.com/doehm/tidytues/blob/main/{dir}/{png_file}'>
+    <img src='{dir}/{pngs_file}'/></a>")
 }
 
 

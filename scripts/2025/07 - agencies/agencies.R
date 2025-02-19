@@ -90,7 +90,7 @@ df_base |>
   theme_void() +
   theme(
     text = element_text(family = ft, size = 48, lineheight = 0.3, colour = txt),
-    plot.background = element_rect(fill = grid::radialGradient(c(bg, "grey25"), r1 = unit(0.5, "npc"))),
+    plot.background = element_rect(fill = grid::radialGradient(c(bg, "grey20"), r1 = unit(0.5, "npc"))),
     plot.title = element_text(size = 128, hjust = 0.5, face = "bold"),
     plot.subtitle = element_text(hjust = 0.5),
     plot.caption = element_markdown(colour = txt, hjust = 0.5, margin = margin(t = 20)),
@@ -98,4 +98,4 @@ df_base |>
     legend.position = "bottom"
   )
 
-ggsave("scripts/2025/07 - agencies/agencies.png", height = 13.5, width = 24)
+ggsave("scripts/2025/07 - agencies/agencies.png", height = 13.5, width = 24.5)
