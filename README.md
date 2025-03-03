@@ -3,14 +3,19 @@ Click on header or the chart for the code.
 
 # 2025
 
+## [Week 08: Academic Literature](https://github.com/doehm/tidytues/blob/main/scripts/2025/08%20-%20academic%20literature/academic.R)
+
+<a href='https://github.com/doehm/tidytues/blob/main/scripts/2025/08 - academic literature/academic.png'>
+<img src='scripts/2025/08 - academic literature/academic-s.png'/></a>
+
 ## [Week 7: Agencies on the FBIs National Incident-Based Reporting System](https://github.com/doehm/tidytues/blob/main/scripts/2025/07%20-%20agencies/agencies.R)
 
-<a href='https://github.com/doehm/tidytues/blob/main/scripts/2025/07 - agencies/agencies'>
+<a href='https://github.com/doehm/tidytues/blob/main/scripts/2025/07 - agencies/agencies.png'>
 <img src='scripts/2025/07 - agencies/agencies-s.png'/></a>
 
 ## [Week 6: Saved CDC datasets](https://github.com/doehm/tidytues/blob/main/scripts/2025/06%20-%20cdc-datasets/cdc-datasets.R)
 
-<a href='https://github.com/doehm/tidytues/blob/main/scripts/2025/06 - cdc-datasets/cdc-datasets'>
+<a href='https://github.com/doehm/tidytues/blob/main/scripts/2025/06 - cdc-datasets/cdc-datasets.png'>
 <img src='scripts/2025/06 - cdc-datasets/cdc-datasets-s.png'/></a>
 
 ## [Week 5: The Simpsons](https://github.com/doehm/tidytues/blob/main/scripts/2025/05%20-%20simpsons/simpsons.R)

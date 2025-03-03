@@ -7,6 +7,11 @@ Click on header or the chart for the code.
 
 # 2025
 
+## [Week 08: Academic Literature](https://github.com/doehm/tidytues/blob/main/scripts/2025/08 - academic literature/academic.R)
+
+<a href='https://github.com/doehm/tidytues/blob/main/scripts/2025/08 - academic literature/academic.png'>
+  <img src='scripts/2025/08 - academic literature/academic-s.png'/></a>
+
 ## [Week 7: Agencies on the FBIs National Incident-Based Reporting System](https://github.com/doehm/tidytues/blob/main/scripts/2025/07 - agencies/agencies.R)
 
 <a href='https://github.com/doehm/tidytues/blob/main/scripts/2025/07 - agencies/agencies.png'>
