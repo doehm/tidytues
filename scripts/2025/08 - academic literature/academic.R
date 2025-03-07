@@ -87,7 +87,7 @@ df |>
   scale_fill_manual(values = c(no = bg1, yes = sunset[4])) +
   ylim(0, 1) +
   xlim(0, 4) +
-  coord_polar("y") +
+  coord_polar("y", clip = "off") +
   labs(
     title = "Academic Literature on Racial and Ethnic Disparities in\nReproductive Medicine in the US",
     subtitle = "The percentage of articles that addressed the given factor",
@@ -105,6 +105,5 @@ df |>
     legend.position = "none"
   )
 
-
-ggsave("scripts/2025/08 - academic literature/academic.png", height = 12, width = 12)
+ggsave("scripts/2025/08 - academic literature/academic.png", height = 12, width = 11)
 
