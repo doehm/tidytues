@@ -3,6 +3,11 @@ Click on header or the chart for the code.
 
 # 2025
 
+## [Week 10: Pixar Films](https://github.com/doehm/tidytues/blob/main/scripts/2025/10%20-%20pixar/pixar.R)
+
+<a href='https://github.com/doehm/tidytues/blob/main/scripts/2025/10 - pixar/pixar.png'>
+<img src='scripts/2025/10 - pixar/pixar-s.png'/></a>
+
 ## [Week 09: Long Beach Animal Shelter](https://github.com/doehm/tidytues/blob/main/scripts/2025/09%20-%20long%20beach/long%20beach.R)
 
 <a href='https://github.com/doehm/tidytues/blob/main/scripts/2025/09 - long beach/long beach.png'>
