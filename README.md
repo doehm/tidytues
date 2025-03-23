@@ -3,6 +3,11 @@ Click on header or the chart for the code.
 
 # 2025
 
+## [Week 11: Palm Trees](https://github.com/doehm/tidytues/blob/main/scripts/2025/11-palm%20trees/palm-trees.R)
+
+<a href='https://github.com/doehm/tidytues/blob/main/scripts/2025/11-palm trees/palm-trees.png'>
+<img src='scripts/2025/11-palm trees/palm-trees-s.png'/></a>
+
 ## [Week 10: Pixar Films](https://github.com/doehm/tidytues/blob/main/scripts/2025/10%20-%20pixar/pixar.R)
 
 <a href='https://github.com/doehm/tidytues/blob/main/scripts/2025/10 - pixar/pixar.png'>
