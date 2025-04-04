@@ -3,6 +3,11 @@ Click on header or the chart for the code.
 
 # 2025
 
+## [Week 13: Pokemon](https://github.com/doehm/tidytues/blob/main/scripts/2025/13%20-%20pokemon/pokemon.R)
+
+<a href='https://github.com/doehm/tidytues/blob/main/scripts/2025/13 - pokemon/pokemon.png'>
+<img src='scripts/2025/13 - pokemon/pokemon-s.png'/></a>
+
 ## [Week 12: Amazon’s Annual Reports](https://github.com/doehm/tidytues/blob/main/scripts/2025/12%20-%20amazon/amazon.R)
 
 <a href='https://github.com/doehm/tidytues/blob/main/scripts/2025/12 - amazon/amazon.png'>
