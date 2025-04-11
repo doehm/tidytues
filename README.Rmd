@@ -7,6 +7,11 @@ Click on header or the chart for the code.
 
 # 2025
 
+## [Week 14: Timely and effective care](https://github.com/doehm/tidytues/blob/main/scripts/2025/14 - timely and effective care/care.R)
+
+<a href='https://github.com/doehm/tidytues/blob/main/scripts/2025/14 - timely and effective care/care.png'>
+  <img src='scripts/2025/14 - timely and effective care/care-s.png'/></a>
+
 ## [Week 13: Pokemon](https://github.com/doehm/tidytues/blob/main/scripts/2025/13 - pokemon/pokemon.R)
 
 <a href='https://github.com/doehm/tidytues/blob/main/scripts/2025/13 - pokemon/pokemon.png'>
