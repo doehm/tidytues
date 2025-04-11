@@ -22,9 +22,6 @@ txt <- "grey20"
 bg <- "white"
 accent <- txt
 
-sunset <- c("#355070", "#6d597a", "#b56576", "#e56b6f", "#eaac8b")
-autumn <- c('#1c2426', '#455852', '#9d8e71', '#d4935d', '#cc612b', '#a5371e', '#ab443b')
-pal <- rev(c('#001219', '#005f73', '#0a9396', '#94d2bd', '#e9d8a6', '#ee9b00', '#ca6702', '#bb3e03', '#ae2012', '#9b2226')[-1])
 pal <- rev(c('#587DB3', '#42BFDD', '#BBE6E4', '#F0F6F6', '#FF66B3'))
 
 font_add_google("Raleway", "raleway", regular.wt = 200)
@@ -93,7 +90,6 @@ plt_flu <- df |>
   labs(title = "Influenza") +
   theme_void() +
   theme(
-    # plot.background = element_rect(fill = "grey90", colour = NA),
     plot.title = element_text(size = 84, hjust = 0, margin = margin(b = 20), family = ft),
     legend.position = "none",
     strip.text = element_blank()
@@ -114,7 +110,6 @@ plt_covid <- df |>
   labs(title = "COVID-19") +
   theme_void() +
   theme(
-    # plot.background = element_rect(fill = "grey95", colour = NA),
     plot.title = element_text(size = 84, hjust = 0, margin = margin(b = 20), family = ft),
     legend.position = "none",
     strip.text = element_blank()
