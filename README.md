@@ -3,6 +3,11 @@ Click on header or the chart for the code.
 
 # 2025
 
+## [Week 16: Fatal Car Crashes in the US](https://github.com/doehm/tidytues/blob/main/scripts/2025/16%20-%20road%20fatalities/road%20fatalities.R)
+
+<a href='https://github.com/doehm/tidytues/blob/main/scripts/2025/16 - road fatalities/road fatalities.png'>
+<img src='scripts/2025/16 - road fatalities/road fatalities-s.png'/></a>
+
 ## [Week 15: Palmer Penguins](https://github.com/doehm/tidytues/blob/main/scripts/2025/15%20-%20penguins/penguins.R)
 
 <a href='https://github.com/doehm/tidytues/blob/main/scripts/2025/15 - penguins/penguins.png'>
