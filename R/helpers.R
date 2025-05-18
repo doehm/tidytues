@@ -21,6 +21,20 @@ make_readme_text <- function(week, title, year = 2025) {
   png_file <- str_replace(r_file, ".R", ".png")
   pngs_file <- str_replace(r_file, ".R", "-s.png")
 
+  # post template
+  cat(glue("
+    #TidyTuesday week {week}:\n
+
+
+
+    #Rstats #dataviz #ggplot2
+  \n"))
+
+  cat(glue("
+Code: 🔗 https://github.com/doehm/tidytues/blob/main/{dir}/{r_file}
+Gallery: 🔗 https://github.com/doehm/tidytues
+  "))
+
   # print readme text
   glue("## [Week {week}: {title}](https://github.com/doehm/tidytues/blob/main/{dir}/{r_file})
 

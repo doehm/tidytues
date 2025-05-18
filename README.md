@@ -3,6 +3,11 @@ Click on header or the chart for the code.
 
 # 2025
 
+## [Week 19: Seismic Events at Mount Vesuvius](https://github.com/doehm/tidytues/blob/main/scripts/2025/19%20-%20mount%20vesuvius/mount%20vesuvius.R)
+
+<a href='https://github.com/doehm/tidytues/blob/main/scripts/2025/19 - mount vesuvius/mount vesuvius.png'>
+<img src='scripts/2025/19 - mount vesuvius/mount vesuvius-s.png'/></a>
+
 ## [Week 16: Fatal Car Crashes in the US](https://github.com/doehm/tidytues/blob/main/scripts/2025/16%20-%20road%20fatalities/road%20fatalities.R)
 
 <a href='https://github.com/doehm/tidytues/blob/main/scripts/2025/16 - road fatalities/road fatalities.png'>

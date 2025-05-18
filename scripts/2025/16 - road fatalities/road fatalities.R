@@ -66,6 +66,14 @@ df_base <- df |>
       )
   )
 
+
+actual <- df |>
+  filter(year > 2006) |>
+  pull(fatalities_count) |>
+  sum()
+
+sum(fcst$.mean) - actual
+
 # 🔡 text --------------------------------------------------------------------
 
 caption <- make_caption(accent, bg)
